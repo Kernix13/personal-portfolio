@@ -1,6 +1,6 @@
 # Personal Porfolio
 
-![portfolio-thumbnail](#notes)
+![portfolio-thumbnail](/portfolio-thumbnail.PNG)
 
 The few files and folders used to build [my portfolio page](https://kernixwebdesign.com/resume-portfolio.html).
 

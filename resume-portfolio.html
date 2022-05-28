@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./resume-portfolio.css" />
+    <script src="https://kit.fontawesome.com/490d4ebda7.js" crossorigin="anonymous"></script>
+    <title>James Kernicky Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <button id="nav-toggle" class="nav-toggle" aria-label="open navigation" tabindex="0" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <div class="row">
+          <span id="portfolio-home" class="logo">j.k.</span>
+          <nav id="nav" class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+              <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="img-animate">
+          <img class="hero-image" src="./images/winter-landscape-700-none.jpg" alt="High-key winter landscape with three trees" />
+        </div>
+        <div class="hero-text">
+          <h1>james kernicky</h1>
+          <p>Front-End Developer & Designer</p>
+        </div>
+      </section>
+
+      <section class="tagline">
+        <div class="container">
+          <p>Applying my love of learning towards web design &amp; development</p>
+          <a class="feature-link" href="#about">Learn more</a>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="projects-container">
+          <h2>my projects</h2>
+
+          <!-- CARDS BEGIN -->
+
+          <!-- CARD 2 -->
+          <div id="cards-container2" class="cards">
+            <div id="card2-flip" class="card active" tabindex="0">
+              <div class="inner-card">
+                <div class="inner-card-front">
+                  <img src="./images/guitar-chord-namer.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
+                  <section class="portfolio-notes">
+                    <h3>Guitar Chord Namer</h3>
+                    <p>
+                      Technologies used: <span class="purple">Vanilla JS</span>,
+                      <span class="purple">Botstrap</span>
+                      <!-- <span class="purple">JSON</span>, -->
+                      <!-- <span class="purple">PostCSS</span>, -->
+                      <!-- <span class="purple">CORS</span> -->
+                    </p>
+                    <ul>
+                      <li>A complete guitar chord naming app for every possible chord built from the most popular scales.</li>
+                      <li>Users enter 3 to 6 notes with options for different tunings &amp; chords in sharp or flat keys.</li>
+                      <li>The chord name, notes, intervals and other useful chord information is added to the DOM.</li>
+                    </ul>
+                  </section>
+                </div>
+
+                <div class="inner-card-back">
+                  <section class="portfolio-notes-back" aria-hidden="true">
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>What was the purpose of this project?</h4>
+                        <p>I started this project after viewing SVG Chord generator repos on GitHub and noticed that their names were wrong.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>How I built this app</h4>
+                        <p>I had to create a lot of variables for my form elements, output fields, music note arrays, and many &ldquo;empty&rdquo; array variables. Add to that a lot of <em>for loops</em> and if conditionals.</p>
+                      </div>
+                    </div>
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>What did I learn building this app?</h4>
+                        <p>It was a challenge building the majority of the functionality inside a single function that is called from the form event listener.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>Is the app complete?</h4>
+                        <p>This app is complete for it's purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins, as well loading the users' tuning and sharp/flat selection. Is an app ever complete?</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!-- card2-flip end -->
+          </div>
+          <!-- cards-container2 end -->
+          <div class="portfolio-links">
+            <a class="portfolio-link feature-link" href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">Live</a>
+            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/guitar-chord-names" target="_blank">Repo</a>
+          </div>
+
+          <!-- CARD 1 -->
+          <div id="cards-container1" class="cards">
+            <div id="card1-flip" class="card active" tabindex="0">
+              <div class="inner-card">
+                <div class="inner-card-front">
+                  <img src="./images/keyboard-600-wide.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
+                  <section class="portfolio-notes">
+                    <h3>Writing Assistant</h3>
+                    <p>
+                      Technologies used: <span class="purple">Vanilla JS</span>, <span class="purple">Clipboard API</span>
+                      <!-- <span class="purple">File API</span> -->
+                    </p>
+                    <ul>
+                      <li>A mouse-based text input tool for composing emails and documents.</li>
+                      <li>Users can enter text into a text area from a virtual keyboard, or by clicking user-supplied words, phrases, and emails.</li>
+                      <li>The Clipboard API is to copy the text area for use in email and word processing applications.</li>
+                    </ul>
+                  </section>
+                </div>
+
+                <div class="inner-card-back">
+                  <section class="portfolio-notes-back" aria-hidden="true">
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>Why I built this app</h4>
+                        <p>It is for anyone with reduced fine motor controls who have better control clicking with an assistive mouse then with using a keyboard.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>How I built this app</h4>
+                        <p>I split a list of common words &amp; added them to an alphabetical mega menu; added the functionality for the keyboard keys; added the textarea with clear/copy buttons; lastly, I added the proper nouns section behind an accordion button.</p>
+                      </div>
+                    </div>
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>What did I learn building this app?</h4>
+                        <p>It is absolutely essential to have a clear plan outlined of what you need to accomplish, and I learned that the hard way.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>Is the app complete?</h4>
+                        <p>No, I need to use the File API so users can upload a file of proper nouns and sample text so that they can have a custom-built page.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!-- card1-flip end -->
+          </div>
+          <!-- cards-container1 end -->
+          <div class="portfolio-links">
+            <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/writer-assist.html" target="_blank">Live</a>
+            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/WriterAssist" target="_blank">Repo</a>
+          </div>
+
+          <!-- CARD 3 -->
+          <div id="cards-container3" class="cards">
+            <div id="card3-flip" class="card active" tabindex="0">
+              <div class="inner-card">
+                <div class="inner-card-front inner-card-front3">
+                  <img src="./images/custom-wordpress-theme.jpg" class="portfolio-thumbnail" alt="computer with data visualizations" />
+                  <section class="portfolio-notes">
+                    <h3>Custom WordPress Theme</h3>
+                    <p>Technologies used: <span class="purple">WordPress</span>, <span class="purple">PHP</span>, <span class="purple">_s</span>, <span class="purple">npm</span>, <span class="purple">Composer</span></p>
+                    <ul>
+                      <li>My custom WordPress theme (<em>Tower</em>) based on the _s starter theme.</li>
+                      <li>Custom functions in the <em>functions.php</em> file and Composer used to generate a style-rtl.css file.</li>
+                      <li>Custom design for the pages, posts and blog page, with custom HTML used for the page designs.</li>
+                    </ul>
+                  </section>
+                </div>
+
+                <div class="inner-card-back">
+                  <section class="portfolio-notes-back" aria-hidden="true">
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>Why I built a WordPress theme</h4>
+                        <p>To understand WordPress better, improve the page speed metrics for my websites, and to have the design and features that I wanted.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>How I built the theme</h4>
+                        <p>I took three Theme Dev courses on Udemy and slowly started creating my template files during each lesson of the last course. I also used the WP Theme Docs along the way.</p>
+                      </div>
+                    </div>
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>What did I learn building the theme?</h4>
+                        <p>WordPress overall is impressive! The template file structure and template tags enable you to give the overall design that you want.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>Is your theme complete?</h4>
+                        <p>I am not happy with some of my designs, and I have only built super-simple plugins. So no, my theme is not complete.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!-- card3-flip end -->
+          </div>
+          <!-- cards-container3 end -->
+          <div class="portfolio-links">
+            <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/" target="_blank">Live</a>
+            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/tower" target="_blank">Repo</a>
+          </div>
+
+          <!-- CARD 4 -->
+          <div id="cards-container4" class="cards">
+            <div id="card4-flip" class="card active" tabindex="0">
+              <div class="inner-card">
+                <div class="inner-card-front">
+                  <img src="./images/travel-site-600-wide.png" class="portfolio-thumbnail" alt="computer keyboard" />
+                  <section class="portfolio-notes">
+                    <h3>Travel Site</h3>
+                    <p>
+                      Technologies used: <span class="purple">Node.js</span>, <span class="purple">npm</span>, <span class="purple">Webpack</span>,
+
+                      <span class="purple">Netlify</span>
+                    </p>
+                    <ul>
+                      <li>This is the finished product for a single-page travel website from a course on Git and Web Developer workflow.</li>
+                      <li>Topics covered: Git, GitHub, Node.js, NPM, Webpack, Netlify, BEM, Lambda functions, 20+ NPM packages, ...</li>
+                      <li>Front-end features: mobile-first design, responsive images, reveal on scroll effects, ...</li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="inner-card-back">
+                  <section class="portfolio-notes-back" aria-hidden="true">
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>What was the purpose of this project?</h4>
+                        <p>This was a 16-hour course with a heavy emphasis on Git and installing NPM packages to aid in the development process.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>What did I find difficult about the course?</h4>
+                        <p>I know I need to work on JS classes, the &quot;this&quot; and &quot;constructor&quot; keywords, and cloud functions.</p>
+                      </div>
+                    </div>
+                    <div class="back-bg">
+                      <div class="back-group">
+                        <h4>What did I learn from the project?</h4>
+                        <p>I am now VERY comfortable with Git, GitHub, Webpack, BEM, and using Netlify. I also need to work on JavaScript OOP and classes, and on customizing the webpack.config file.</p>
+                      </div>
+                      <div class="back-group">
+                        <h4>Final thoughts on the course:</h4>
+                        <p>I understood the code, however, the solutions for some of the effects were new to me. I can figure out easy things but I am still at a beginner to intermediate stage of web development.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <!-- card4-flip end -->
+          </div>
+          <!-- cards-container4 end -->
+          <div class="portfolio-links">
+            <a class="portfolio-link feature-link" href="https://gallant-hamilton-e0c06d.netlify.app/" target="_blank">Live</a>
+            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/travel-site" target="_blank">Repo</a>
+          </div>
+
+          <!-- CARDS END -->
+        </div>
+        <!-- container end -->
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2>my toolkit</h2>
+          <!-- https://www.svgrepo.com/vectors/api/ -->
+          <!-- https://icons8.com/icons/set/html -->
+          <ul class="my-skills">
+            <li class="skill-container">
+              <img src="icons/html-5.svg" alt="" />
+              <p>HTML</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/css3.svg" alt="" />
+              <p>CSS</p>
+            </li>
+            <li class="skill-container">
+              <img class="js-skill" src="icons/javascript.svg" alt="" />
+              <p class="skill-desc">JavaScript</p>
+            </li>
+            <li class="skill-container" title="Responsive Web Design">
+              <img src="icons/rwd2.svg" alt="" />
+              <p>RWD</p>
+            </li>
+            <!-- <li class="skill-container">
+            <img src="icons/sass.svg" alt="" />
+            <p>SASS</p>
+          </li> -->
+            <li class="skill-container">
+              <img class="js-skill" src="icons/react.svg" alt="" />
+              <p class="skill-desc">React</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/wordpress.svg" alt="" />
+              <p class="skill-desc">WordPress</p>
+            </li>
+            <!-- <li class="skill-container">
+              <img src="icons/jquery.svg" alt="" />
+              <p>jQuery</p>
+            </li> -->
+            <!-- <li class="skill-container">
+            <img src="icons/mysql.svg" alt="" />
+            <p>MySQL</p>
+          </li> -->
+            <!-- <li class="skill-container">
+              <img src="icons/json-file-svgrepo-com.svg" alt="" />
+              <p>JSON</p>
+            </li> -->
+            <li class="skill-container">
+              <img src="icons/git.svg" alt="" />
+              <p>Git</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/github.svg" alt="" />
+              <p>GitHub</p>
+            </li>
+            <!-- <li class="skill-container">
+            <img src="icons/terminal.svg" alt="" />
+            <p>Terminal</p>
+          </li> -->
+            <li class="skill-container">
+              <img src="icons/npm.svg" alt="" />
+              <p>NPM</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/nodejs3.svg" alt="" />
+              <p>Node.js</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/vscode.svg" alt="" />
+              <p class="skill-desc">VS Code</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/webpack.svg" alt="" />
+              <p>Webpack</p>
+            </li>
+            <li class="skill-container">
+              <img src="icons/mongodb-icon-1.svg" alt="" />
+              <p class="skill-desc">MongoDB</p>
+            </li>
+            <!-- <li class="skill-container">
+              <img src="icons/mongodb-icon.svg" alt="" class="mongo" />
+              <p class="skill-desc">MongoDB</p>
+            </li> -->
+            <li class="skill-container">
+              <img src="icons/firebase.svg" alt="" />
+              <p class="skill-desc">Firebase</p>
+            </li>
+            <!-- <li class="skill-container">
+            <img src="icons/api-svgrepo-com.svg" alt="" />
+            <p>APIs</p>
+          </li> -->
+            <li class="skill-container">
+              <img src="icons/figma.svg" alt="" />
+              <p>Figma</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>about me</h2>
+          <div class="about-container">
+            <div><img class="profile-pic" src="./images/mypic3fix2.jpg" alt="my photo" /></div>
+            <p>Hello! My name is Jim. My interest in website design started back in 2009 when I built my outdoor photography and pet services websites with Dreamweaver.</p>
+            <p>I installed WordPress on my pet service site in 2018, and a year later created my guitar chords site also with WordPress. I developed my WordPress theme (Tower) in 2020 and built my third website (Kernix Web Design) with that theme. Now I am focusing on JavaScript and web development.</p>
+            <p>I ran my pet service business for the past 13 years so I am a motivated and independent worker. I look forward to working alongside experienced developers and continuing to learn the craft of web development!</p>
+          </div>
+
+          <h3 class="photo-headline">examples of my outdoor photography</h3>
+          <div class="photos">
+            <div class="photo">
+              <div class="photo-img">
+                <ul class="gridContainer">
+                  <li class="photo-item">
+                    <img src="./images/FallsBridge1-375.jpg" alt="Falls Bridge over the Schuykill River, Phila., PA" />
+                  </li>
+
+                  <li class="photo-item horizontal">
+                    <img src="./images/boathouserow3-375.jpg" alt="Boathouse Row at sunset from Spring Garden Bridge, Phila., PA" />
+                  </li>
+
+                  <li class="photo-item">
+                    <img src="./images/LongwoodReflect-375.jpg" alt="Reflection of trees in water at Longwood Gardens, Kennett Square, PA" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Let me know how I can help you!</h2>
+          <p>Send me an email from my WordPress website or call me at (484) 432-9712.</p>
+          <a class="feature-link" href="https://kernixwebdesign.com/contact/" target="_blank">Let's work together</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-flex">
+          <div>
+            <a class="footer-logo" href="#portfolio-home">j.k.</a>
+          </div>
+
+          <nav>
+            <ul class="footer-nav">
+              <li class="footer-nav-item"><a href="#portfolio-home">Home</a></li>
+              <!-- <li class="footer-nav-item"><a href="https://kernixwebdesign.com/inventory-management-resume/"
+                target="_blank">Online
+                resume</a></li> -->
+              <li class="footer-nav-item"><a href="https://kernixwebdesign.com/" target="_blank">Main site</a></li>
+              <li class="footer-nav-item"><a href="https://kernixwebdesign.com/contact/" target="_blank">Contact</a></li>
+            </ul>
+          </nav>
+
+          <ul class="social-icons">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/jim-kernicky/" target="_blank" aria-label="View LinkedIn page" title="My LinkedIn Profile"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/Kernix13" target="_blank" aria-label="View GitHub page" title="My GitHub Repo"><i aria-hidden="true" class="fab fa-github"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="https://codepen.io/jim-kernicky" target="_blank" aria-label="View CodePen page" title="My CodePen"><i aria-hidden="true" class="fab fa-codepen"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.freecodecamp.org/fccb4a9d0f6-135f-4a94-97f5-795068269ca7" target="_blank" aria-label="View freeCodeCamp certificates" title="My freeCodeCamp Certificates"><i aria-hidden="true" class="fab fa-free-code-camp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">&copy; 2021 James Kernicky</p>
+      </div>
+    </footer>
+
+    <script src="./resume-portfolio.js"></script>
+  </body>
+</html>

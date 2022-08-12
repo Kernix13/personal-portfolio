@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./resume-portfolio.css" />
+    <script src="https://kit.fontawesome.com/490d4ebda7.js" crossorigin="anonymous"></script>
+    <title>James Kernicky Project Details</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <button id="nav-toggle" class="nav-toggle" aria-label="open navigation" tabindex="0" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <div class="row">
+          <a href="./resume-portfolio.html" class="logo details-home">j.k.</a>
+
+          <nav id="nav" class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item"><a href="./resume-portfolio.html#projects" class="nav__link">Projects</a></li>
+              <li class="nav__item"><a href="./resume-portfolio.html#skills" class="nav__link">Skills</a></li>
+              <li class="nav__item"><a href="./resume-portfolio.html#about" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="./resume-portfolio.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="detail-container">
+          <h1 class="intro-title">project details</h1>
+          <!-- <p>Blurb?</p> -->
+        </div>
+      </section>
+
+      <!-- Tarp setups -->
+      <section id="tarps" class="project-section">
+        <h2 class="section-title">Tarp Configurations Calculator</h2>
+        <div class="detail-container">
+          <p class="tech-stack">Tech used</p>
+
+          <div class="tech-images">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+            <img src="https://img.icons8.com/color/40/000000/react-native.png" />
+            <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png" alt="github" width="40" height="40" />
+            <img src="https://img.icons8.com/color/48/000000/git.png" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/inkscape.png" alt="inkscape" width="40" height="40" />
+          </div>
+          <div class="section-header-row">
+            <img src="./images/tarp-form.PNG" alt="" class="project-image-primary" />
+
+            <div class="project-intro-div">
+              <p class="project-intro-p">This is a personal project that aligns with my interests in bushcraft and wilderness survival. It calculates the height of the rope(s) used to raise your tarp for 33 different tarp configurations.</p>
+              <p>It also notes whether the user is able to 1) sit under the tarp, and 2) sit in a chair under the tarp.</p>
+              <p>You can try out the app on <a href="https://timely-longma-59205e.netlify.app/" target="_blank">Netlify</a> or take a look at the <a href="https://github.com/Kernix13/tarp-configs" target="_blank">code on Github</a>.</p>
+            </div>
+          </div>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>Why I built this app?</h3>
+              <p>I wanted to do something unique so I converted my spreadsheet equations for tarp configuration into a React/JS application.</p>
+              <p>This app would be useful for campers, backpackers, and bushcrafters.</p>
+            </div>
+            <div class="section-div">
+              <h3>What was challenging about this app?</h3>
+              <p>I had to do some research for my Hamburger menu and PNG files that were not outputting due to their small size and default Webpack settings.</p>
+              <p>I also had to redesign the overall file structure due to re-renders of components.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/tarp-result.PNG" alt="" class="project-image image-small" />
+            <figcaption>Example of results output</figcaption>
+          </figure>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>What did I learn from the project?</h3>
+              <p>The ease of Tailwind and the basics of React such as react-router-dom, use hooks (useState, useContext, useEffect, useRef, useNavigate, and useLocation), and conditional JSX.</p>
+            </div>
+            <div class="section-div">
+              <h3>Final thoughts:</h3>
+              <p>Using useContext was better than useState but I would like to incorporate useReducer for my state values. I would also prefer to create my own webpack.config file for greater control.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/tarp-config.PNG" alt="" class="project-image image-small" />
+            <figcaption>Example of tarp fold(s) and tie points</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Guitar Chords -->
+      <section id="guitar" class="project-section">
+        <h2>Guitar Chord Namer</h2>
+        <div class="detail-container">
+          <p class="tech-stack">Tech used</p>
+          <div class="tech-images">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" />
+
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png" alt="github" width="40" height="40" />
+            <img src="https://img.icons8.com/color/48/000000/git.png" />
+          </div>
+          <div class="section-header-row">
+            <img src="./images/what-chord.PNG" alt="" class="project-image-primary" />
+            <div class="project-intro-div">
+              <p class="project-intro-p">This app returns the name of a guitar chord, the chord intervals, the chord tendencies, whether or not it equals another chord by a different name, and the scales that build the chord.</p>
+              <p>You won't find a more accurate and complete guitar chord namer app! If you or someone you know plays guitar then try out the <a href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">app on my guitar website</a> or check out the <a href="https://github.com/Kernix13/guitar-chord-names" target="_blank">code on GitHub</a>.</p>
+            </div>
+          </div>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>Why did you build this app?</h3>
+              <p>I started this project after viewing SVG Guitar Chord repos on GitHub and noticed that their names were often wrong. I also was not able to find any quality websites on the subject.</p>
+            </div>
+            <div class="section-div">
+              <h3>How I built this app</h3>
+              <p>I had to create a lot of variables for my form elements, output fields, and music note arrays. I also had to write all the for loops and conditions within a single function.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/guitar-results.PNG" alt="" class="project-image image-small" />
+            <figcaption>Output shown for a valid chord</figcaption>
+          </figure>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>What did I learn building this app?</h3>
+              <p>It was a challenge building the majority of the functionality inside a single function that is called from the form event listener.</p>
+              <p>Also. the use of the JS method <em>every</em> was the main "helper" method for getting the functionality I needed.</p>
+            </div>
+            <div class="section-div">
+              <h3>Is the app complete?</h3>
+              <p>This app is complete for its purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins.</p>
+              <p>I also intend to load the users' tuning and sharp/flat selection into local storage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Writer assistant -->
+      <section id="writer" class="project-section">
+        <h2>Writing Assistant</h2>
+        <div class="detail-container">
+          <p class="tech-stack">Tech used</p>
+          <div class="tech-images">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png" alt="github" width="40" height="40" />
+            <img src="https://img.icons8.com/color/48/000000/git.png" />
+          </div>
+          <div class="section-header-row">
+            <img src="./images/writer-tool3.PNG" alt="" class="project-image-primary image-xsmall" />
+            <div class="project-intro-div">
+              <p class="project-intro-p">I built this app for my aunt who has cerebral palsy. My hope was that she would be able to select words and phrases for better emails to friends and family.</p>
+              <p>If you know someone with a disability that could use this tool then send them to the <a href="https://kernixwebdesign.com/writer-assist.html" target="_blank">live version</a> and have someone get in touch with me. Also, take a look at the <a href="https://github.com/Kernix13/WriterAssist" target="_blank">code on GitHub</a>.</p>
+            </div>
+          </div>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>Why I built this app</h3>
+              <p>It is for anyone with reduced fine motor control who has better control clicking with an assistive mouse than using a keyboard. The hope is that they would be able to type more text in less time.</p>
+            </div>
+            <div class="section-div">
+              <h3>How I built this app</h3>
+              <p>I added the most common words to an alphabetical mega menu, added the functionality for the keyboard keys, added the textarea with clear/copy buttons, and lastly, I added the proper nouns section behind an accordion button.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/writer-tool2.PNG" alt="" class="project-image image-small" />
+            <figcaption>Example of drop-down list for phrases</figcaption>
+          </figure>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>What did I learn building this app?</h3>
+              <p>It is absolutely essential to have a clear plan outlined of what you need to accomplish, and I learned that the hard way. This was my first project and the details were not clear in my mind.</p>
+            </div>
+            <div class="section-div">
+              <h3>Is the app complete?</h3>
+              <p>No, I need to use the File API so users can upload a file of proper nouns and sample text so that they can have a custom-built page. I would also like to create keyboards for other languages.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WordPress custome theme -->
+      <section id="wordpress" class="project-section wordpress">
+        <h2>Custom WordPress Theme</h2>
+        <div class="detail-container">
+          <p class="tech-stack">Tech used</p>
+          <div class="tech-images">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" />
+            <img height="50" src="https://user-images.githubusercontent.com/25181517/183345419-fe3e8e5a-9bbb-4c34-9121-463721cd9bfe.jpg" width="50" alt="Wordpress" title="Wordpress" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/php.png" alt="php" width="60" height="60" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png" alt="github" width="40" height="40" />
+            <img src="https://img.icons8.com/color/48/000000/git.png" />
+          </div>
+          <div class="section-header-row">
+            <img src="./images/kwd1.PNG" alt="" class="project-image-primary image-xsmall" />
+            <div class="project-intro-div">
+              <p class="project-intro-p">In 2018 I installed WordPress on one of my websites but I found the lack of design options and the decrease in page speed from page builders problematic. So I decided to learn how to build my own theme.</p>
+              <p>I was able to duplicate the design of page builders but without any loss in page speed. I have only built a simple plugin but will be builing more in the future! Check out the <a href="https://kernixwebdesign.com/">live site</a> and the <a href="https://github.com/Kernix13/tower">GitHub repo</a>.</p>
+            </div>
+          </div>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>Why I built a WordPress theme</h3>
+              <p>To understand WordPress better, improve the page speed metrics for my websites, and have the design and features that I wanted.</p>
+            </div>
+            <div class="section-div">
+              <h3>How I built the theme</h3>
+              <p>I took three Theme Dev courses on Udemy and slowly started creating my template files during each lesson of the last course. I also used the WP Theme Docs along the way.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/kwd2.PNG" alt="" class="project-image image-small" />
+            <figcaption>Services card from home page</figcaption>
+          </figure>
+          <!-- <img src="./images/kwd2.PNG" alt="" /> -->
+          <div class="section-row">
+            <div class="section-div">
+              <h3>What did I learn building the theme?</h3>
+              <p>WordPress overall is impressive! The template file structure and template tags enable you to give the overall design that you want.</p>
+            </div>
+            <div class="section-div">
+              <h3>Is your theme complete?</h3>
+              <p>I am not happy with some of my designs, and I have only built super-simple plugins. So no, my theme, PHP skills and WordPress journey continue.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-flex">
+          <div>
+            <a class="footer-logo" href="./resume-portfolio.html">j.k.</a>
+          </div>
+
+          <nav>
+            <ul class="footer-nav">
+              <li class="footer-nav-item"><a href="./details.html">Details</a></li>
+              <!-- <li class="footer-nav-item"><a href="https://kernixwebdesign.com/inventory-management-resume/"
+                target="_blank">Online
+                resume</a></li> -->
+              <li class="footer-nav-item"><a href="https://kernixwebdesign.com/" target="_blank">Main site</a></li>
+              <li class="footer-nav-item"><a href="https://kernixwebdesign.com/contact/" target="_blank">Contact</a></li>
+            </ul>
+          </nav>
+
+          <ul class="social-icons">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/jim-kernicky/" target="_blank" aria-label="View LinkedIn page" title="My LinkedIn Profile"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/Kernix13" target="_blank" aria-label="View GitHub page" title="My GitHub Repo"><i aria-hidden="true" class="fab fa-github"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="https://codepen.io/jim-kernicky" target="_blank" aria-label="View CodePen page" title="My CodePen"><i aria-hidden="true" class="fab fa-codepen"></i></a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.freecodecamp.org/fccb4a9d0f6-135f-4a94-97f5-795068269ca7" target="_blank" aria-label="View freeCodeCamp certificates" title="My freeCodeCamp Certificates"><i aria-hidden="true" class="fab fa-free-code-camp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">&copy; 2021 James Kernicky</p>
+      </div>
+    </footer>
+
+    <script src="./resume-portfolio.js"></script>
+  </body>
+</html>

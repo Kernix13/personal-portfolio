@@ -56,224 +56,112 @@
         <div class="projects-container">
           <h2>my projects</h2>
 
-          <!-- CARDS BEGIN -->
-
-          <!-- CARD 4 -->
-          <div id="cards-container5" class="cards">
-            <div id="card5-flip" class="card active" tabindex="0">
-              <div class="inner-card">
-                <div class="inner-card-front">
-                  <img src="./images/tarp-configs1.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
-                  <section class="portfolio-notes">
-                    <h3>Tarp Configurations</h3>
-                    <p>
-                      Technologies used: <span class="purple">React</span>, <span class="purple">Tailwindcss</span>,
-
-                      <span class="purple">Netlify</span>
-                    </p>
-                    <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi debitis tempora, !.</li>
-                      <li>Topics covered: Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tempore!, ...</li>
-                      <li>Front-end features: mobile-first design, responsive images, reveal on scroll effects, ...</li>
-                    </ul>
-                  </section>
-                </div>
-                <div class="inner-card-back">
-                  <section class="portfolio-notes-back" aria-hidden="true">
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>What was the purpose of this project?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deleniti dolore voluptatibus similique laboriosam maxime voluptatum unde laborum, officia inventore..</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>What did I find difficult about this project?</h4>
-                        <p>I know I need to work on JS classes, the &quot;this&quot; and &quot;constructor&quot; keywords, and cloud functions.</p>
-                      </div>
-                    </div>
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>What did I learn from the project?</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit sed ipsum ratione. Quam distinctio laudantium placeat, qui sunt officiis quos accusamus, nam maxime commodi cumque, voluptas dolorem ab quae?.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>Final thoughts:</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro tempora velit quod, minus dolores assumenda eligendi maiores possimus fugit, cum cumque? Recusandae qui consequatur unde magnam cum itaque culpa!.</p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+          <!-- CARDS BEGIN 
+          Need to use grid-template-columns for a 2 x 2 
+          -->
+          <div class="grid">
+            <!-- Card 1 -->
+            <div class="full-card">
+              <div class="inner-card-front">
+                <img src="./images/tarp-configs3.jpg" class="portfolio-thumbnail" alt="" />
+                <section class="portfolio-notes">
+                  <h3>Tarp Configurations</h3>
+                  <p>Technologies used: <span class="purple">React</span>, <span class="purple">JS Math Object</span>, <span class="purple">Tailwind CSS</span>, <span class="purple">Netlify</span></p>
+                  <ul>
+                    <li>Calculates ridgeline height for 33 tarp configurations based on user dimensions and tarp size.</li>
+                    <li>The output gives the ridgeline height in inches and checks if the user can sit under the design.</li>
+                    <li>Graphics that show each tarp design along with fold lines for each and notes on stakes, ropes, poles, etc.</li>
+                  </ul>
+                </section>
+              </div>
+              <!-- cards-container5 end -->
+              <div class="portfolio-links">
+                <a class="portfolio-link feature-link" href="https://timely-longma-59205e.netlify.app/" target="_blank">Live</a>
+                <a class="portfolio-link feature-link" href="https://github.com/Kernix13/tarp-configs" target="_blank">Repo</a>
+                <a class="portfolio-link feature-link" href="./details.html#tarps">Details</a>
               </div>
             </div>
-            <!-- card5-flip end -->
-          </div>
-          <!-- cards-container5 end -->
-          <div class="portfolio-links">
-            <a class="portfolio-link feature-link" href="https://timely-longma-59205e.netlify.app/" target="_blank">Live</a>
-            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/tarp-configs" target="_blank">Repo</a>
-          </div>
 
-          <!-- CARD 2 -->
-          <div id="cards-container2" class="cards">
-            <div id="card2-flip" class="card active" tabindex="0">
-              <div class="inner-card">
-                <div class="inner-card-front">
-                  <img src="./images/guitar-chord-namer.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
-                  <section class="portfolio-notes">
-                    <h3>Guitar Chord Namer</h3>
-                    <p>
-                      Technologies used: <span class="purple">Vanilla JS</span>,
-                      <span class="purple">Botstrap</span>
-                      <!-- <span class="purple">JSON</span>, -->
-                      <!-- <span class="purple">PostCSS</span>, -->
-                      <!-- <span class="purple">CORS</span> -->
-                    </p>
-                    <ul>
-                      <li>A complete guitar chord naming app for every possible chord built from the most popular scales.</li>
-                      <li>Users enter 3 to 6 notes with options for different tunings &amp; chords in sharp or flat keys.</li>
-                      <li>The chord name, notes, intervals and other useful chord information is added to the DOM.</li>
-                    </ul>
-                  </section>
-                </div>
+            <!-- CARD 2 -->
+            <div class="full-card">
+              <div class="inner-card-front">
+                <img src="./images/guitar-chord-namer.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
+                <section class="portfolio-notes">
+                  <h3>Guitar Chord Namer</h3>
+                  <p>
+                    Technologies used: <span class="purple">Vanilla JS</span>,
+                    <span class="purple">Bootstrap</span>
+                    <!-- <span class="purple">JSON</span>, -->
+                    <!-- <span class="purple">PostCSS</span>, -->
+                    <!-- <span class="purple">CORS</span> -->
+                  </p>
+                  <ul>
+                    <li>A complete guitar chord naming app for every possible chord built from the most popular scales.</li>
+                    <li>Users enter 3 to 6 notes with options for different tunings &amp; chords in sharp or flat keys.</li>
+                    <li>The chord name, notes, intervals, and other useful chord information are added to the DOM.</li>
+                  </ul>
+                </section>
+              </div>
 
-                <div class="inner-card-back">
-                  <section class="portfolio-notes-back" aria-hidden="true">
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>What was the purpose of this project?</h4>
-                        <p>I started this project after viewing SVG Chord generator repos on GitHub and noticed that their names were wrong.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>How I built this app</h4>
-                        <p>I had to create a lot of variables for my form elements, output fields, music note arrays, and many &ldquo;empty&rdquo; array variables. Add to that a lot of <em>for loops</em> and if conditionals.</p>
-                      </div>
-                    </div>
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>What did I learn building this app?</h4>
-                        <p>It was a challenge building the majority of the functionality inside a single function that is called from the form event listener.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>Is the app complete?</h4>
-                        <p>This app is complete for it's purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins, as well loading the users' tuning and sharp/flat selection. Is an app ever complete?</p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+              <!-- cards-container2 end -->
+              <div class="portfolio-links">
+                <a class="portfolio-link feature-link" href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">Live</a>
+                <a class="portfolio-link feature-link" href="https://github.com/Kernix13/guitar-chord-names" target="_blank">Repo</a>
+                <a class="portfolio-link feature-link" href="./details.html#guitar">Details</a>
               </div>
             </div>
-            <!-- card2-flip end -->
-          </div>
-          <!-- cards-container2 end -->
-          <div class="portfolio-links">
-            <a class="portfolio-link feature-link" href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">Live</a>
-            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/guitar-chord-names" target="_blank">Repo</a>
-          </div>
 
-          <!-- CARD 1 -->
-          <div id="cards-container1" class="cards">
-            <div id="card1-flip" class="card active" tabindex="0">
-              <div class="inner-card">
-                <div class="inner-card-front">
-                  <img src="./images/keyboard-600-wide.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
-                  <section class="portfolio-notes">
-                    <h3>Writing Assistant</h3>
-                    <p>
-                      Technologies used: <span class="purple">Vanilla JS</span>, <span class="purple">Clipboard API</span>
-                      <!-- <span class="purple">File API</span> -->
-                    </p>
-                    <ul>
-                      <li>A mouse-based text input tool for composing emails and documents.</li>
-                      <li>Users can enter text into a text area from a virtual keyboard, or by clicking user-supplied words, phrases, and emails.</li>
-                      <li>The Clipboard API is to copy the text area for use in email and word processing applications.</li>
-                    </ul>
-                  </section>
-                </div>
+            <!-- CARD 3 -->
 
-                <div class="inner-card-back">
-                  <section class="portfolio-notes-back" aria-hidden="true">
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>Why I built this app</h4>
-                        <p>It is for anyone with reduced fine motor controls who have better control clicking with an assistive mouse then with using a keyboard.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>How I built this app</h4>
-                        <p>I split a list of common words &amp; added them to an alphabetical mega menu; added the functionality for the keyboard keys; added the textarea with clear/copy buttons; lastly, I added the proper nouns section behind an accordion button.</p>
-                      </div>
-                    </div>
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>What did I learn building this app?</h4>
-                        <p>It is absolutely essential to have a clear plan outlined of what you need to accomplish, and I learned that the hard way.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>Is the app complete?</h4>
-                        <p>No, I need to use the File API so users can upload a file of proper nouns and sample text so that they can have a custom-built page.</p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+            <div class="full-card">
+              <div class="inner-card-front">
+                <img src="./images/keyboard-600-wide.jpg" class="portfolio-thumbnail" alt="computer keyboard" />
+                <section class="portfolio-notes">
+                  <h3>Writing Assistant</h3>
+                  <p>
+                    Technologies used: <span class="purple">Vanilla JS</span>, <span class="purple">Clipboard API</span>
+                    <!-- <span class="purple">File API</span> -->
+                  </p>
+                  <ul>
+                    <li>A mouse-based text input tool for composing emails and documents.</li>
+                    <li>Users can enter text into a text area from a virtual keyboard, or by clicking common words and phrases.</li>
+                    <li>The Clipboard API is used to copy the text area for use in email and word processing applications.</li>
+                  </ul>
+                </section>
+              </div>
+
+              <!-- cards-container1 end -->
+              <div class="portfolio-links">
+                <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/writer-assist.html" target="_blank">Live</a>
+                <a class="portfolio-link feature-link" href="https://github.com/Kernix13/WriterAssist" target="_blank">Repo</a>
+                <a class="portfolio-link feature-link" href="./details.html#writer">Details</a>
               </div>
             </div>
-            <!-- card1-flip end -->
-          </div>
-          <!-- cards-container1 end -->
-          <div class="portfolio-links">
-            <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/writer-assist.html" target="_blank">Live</a>
-            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/WriterAssist" target="_blank">Repo</a>
-          </div>
 
-          <!-- CARD 3 -->
-          <div id="cards-container3" class="cards">
-            <div id="card3-flip" class="card active" tabindex="0">
-              <div class="inner-card">
-                <div class="inner-card-front inner-card-front3">
-                  <img src="./images/custom-wordpress-theme.jpg" class="portfolio-thumbnail" alt="computer with data visualizations" />
-                  <section class="portfolio-notes">
-                    <h3>Custom WordPress Theme</h3>
-                    <p>Technologies used: <span class="purple">WordPress</span>, <span class="purple">PHP</span>, <span class="purple">_s</span>, <span class="purple">npm</span>, <span class="purple">Composer</span></p>
-                    <ul>
-                      <li>My custom WordPress theme (<em>Tower</em>) based on the _s starter theme.</li>
-                      <li>Custom functions in the <em>functions.php</em> file and Composer used to generate a style-rtl.css file.</li>
-                      <li>Custom design for the pages, posts and blog page, with custom HTML used for the page designs.</li>
-                    </ul>
-                  </section>
-                </div>
+            <!-- CARD 4 -->
 
-                <div class="inner-card-back">
-                  <section class="portfolio-notes-back" aria-hidden="true">
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>Why I built a WordPress theme</h4>
-                        <p>To understand WordPress better, improve the page speed metrics for my websites, and to have the design and features that I wanted.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>How I built the theme</h4>
-                        <p>I took three Theme Dev courses on Udemy and slowly started creating my template files during each lesson of the last course. I also used the WP Theme Docs along the way.</p>
-                      </div>
-                    </div>
-                    <div class="back-bg">
-                      <div class="back-group">
-                        <h4>What did I learn building the theme?</h4>
-                        <p>WordPress overall is impressive! The template file structure and template tags enable you to give the overall design that you want.</p>
-                      </div>
-                      <div class="back-group">
-                        <h4>Is your theme complete?</h4>
-                        <p>I am not happy with some of my designs, and I have only built super-simple plugins. So no, my theme is not complete.</p>
-                      </div>
-                    </div>
-                  </section>
-                </div>
+            <div class="full-card">
+              <div class="inner-card-front">
+                <img src="./images/custom-wordpress-theme.jpg" class="portfolio-thumbnail" alt="computer with data visualizations" />
+                <section class="portfolio-notes">
+                  <h3>Custom WordPress Theme</h3>
+                  <p>Technologies used: <span class="purple">WordPress</span>, <span class="purple">PHP</span>, <span class="purple">_s</span>, <span class="purple">Composer</span></p>
+                  <ul>
+                    <li>My custom WordPress theme (<em>Tower</em>) is based on the _s starter theme.</li>
+                    <li>Custom functions in the <em>functions.php</em> file and the package Composer to generate a style-rtl.css file.</li>
+                    <li>Custom design for the pages, posts, and blog page, with custom HTML used for the editor.</li>
+                  </ul>
+                </section>
+              </div>
+
+              <!-- cards-container3 end -->
+              <div class="portfolio-links">
+                <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/" target="_blank">Live</a>
+                <a class="portfolio-link feature-link" href="https://github.com/Kernix13/tower" target="_blank">Repo</a>
+                <a class="portfolio-link feature-link" href="./details.html#wordpress">Details</a>
               </div>
             </div>
-            <!-- card3-flip end -->
           </div>
-          <!-- cards-container3 end -->
-          <div class="portfolio-links">
-            <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/" target="_blank">Live</a>
-            <a class="portfolio-link feature-link" href="https://github.com/Kernix13/tower" target="_blank">Repo</a>
-          </div>
-
           <!-- CARDS END -->
         </div>
         <!-- container end -->
@@ -301,19 +189,22 @@
               <img class="js-skill" src="icons/javascript.svg" alt="" />
               <p class="skill-desc">JavaScript</p>
             </li>
-            <li class="skill-container" title="Responsive Web Design">
-              <img src="icons/rwd2.svg" alt="" />
-              <p>RWD</p>
+            <li class="skill-container">
+              <img src="icons/wordpress.svg" alt="" />
+              <p class="skill-desc">WordPress</p>
             </li>
 
             <li class="skill-container">
               <img class="js-skill" src="icons/react.svg" alt="" />
               <p class="skill-desc">React</p>
             </li>
-
             <li class="skill-container">
-              <img src="icons/wordpress.svg" alt="" />
-              <p class="skill-desc">WordPress</p>
+              <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="" />
+              <p>Tailwind</p>
+            </li>
+            <li class="skill-container" title="Responsive Web Design">
+              <img src="icons/rwd2.svg" alt="" />
+              <p>RWD</p>
             </li>
             <!-- <li class="skill-container">
               <img src="icons/jquery.svg" alt="" />
@@ -339,34 +230,30 @@
             <img src="icons/terminal.svg" alt="" />
             <p>Terminal</p>
           </li> -->
-            <li class="skill-container">
+            <!-- <li class="skill-container">
               <img src="icons/npm.svg" alt="" />
               <p>NPM</p>
-            </li>
+            </li> -->
             <!-- <li class="skill-container">
               <img src="icons/nodejs3.svg" alt="" />
               <p>Node.js</p>
             </li> -->
-            <li class="skill-container">
+            <!-- <li class="skill-container">
               <img src="icons/vscode.svg" alt="" />
               <p class="skill-desc">VS Code</p>
-            </li>
+            </li> -->
             <li class="skill-container">
               <img src="icons/webpack.svg" alt="" />
               <p>Webpack</p>
             </li>
-            <li class="skill-container">
+            <!-- <li class="skill-container">
               <img src="icons/mongodb-icon-1.svg" alt="" />
               <p class="skill-desc">MongoDB</p>
-            </li>
-            <!-- <li class="skill-container">
-              <img src="icons/mongodb-icon.svg" alt="" class="mongo" />
-              <p class="skill-desc">MongoDB</p>
             </li> -->
-            <li class="skill-container">
+            <!-- <li class="skill-container">
               <img src="icons/firebase.svg" alt="" />
               <p class="skill-desc">Firebase</p>
-            </li>
+            </li> -->
             <!-- <li class="skill-container">
             <img src="icons/api-svgrepo-com.svg" alt="" />
             <p>APIs</p>
@@ -425,12 +312,12 @@
       <div class="container">
         <div class="footer-flex">
           <div>
-            <a class="footer-logo" href="#portfolio-home">j.k.</a>
+            <a class="footer-logo" href="./resume-portfolio.html">j.k.</a>
           </div>
 
           <nav>
             <ul class="footer-nav">
-              <li class="footer-nav-item"><a href="#portfolio-home">Home</a></li>
+              <li class="footer-nav-item"><a href="./details.html">Details</a></li>
               <!-- <li class="footer-nav-item"><a href="https://kernixwebdesign.com/inventory-management-resume/"
                 target="_blank">Online
                 resume</a></li> -->

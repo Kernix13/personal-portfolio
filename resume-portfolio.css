@@ -25,7 +25,7 @@ font-family: 'Open Sans', sans-serif;
   --gray4: #eeeeee;
   // --color-bg1: #f6f4f3;
   --purple: #5805cc;
-  --color-lite: #f3f7f9;
+  --color-lite: #e1eef4;
   --color-dark: #2d3250;
   --link-hover: #8c6a02;
   --footer-hover: rgb(211, 157, 58);
@@ -146,6 +146,7 @@ img {
   width: 100%;
   align-self: baseline;
 }
+
 .project-intro-div {
   width: 100%;
 }
@@ -218,11 +219,13 @@ span.feature-link:hover {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .detail-container {
   width: 87%;
   max-width: 1100px;
   margin: 3em auto;
 }
+
 .projects-container {
   width: 89%;
   max-width: 1100px;
@@ -339,6 +342,7 @@ span.feature-link:hover {
   text-decoration: none;
   color: var(--dark);
 }
+
 .details-home:hover {
   color: var(--link-hover);
 }
@@ -369,6 +373,7 @@ span.feature-link:hover {
   font-size: 2.5rem;
   text-align: left;
 }
+
 .hero-text h2,
 .hero-text p {
   font-size: 1rem;
@@ -380,6 +385,7 @@ span.feature-link:hover {
   font-size: 3rem;
   font-weight: 400;
 }
+
 /* sections */
 .tagline,
 .contact {
@@ -409,6 +415,7 @@ span.feature-link:hover {
   text-align: center;
   margin-bottom: 2em;
 }
+
 /* PROJECTS END */
 
 .about {
@@ -416,7 +423,7 @@ span.feature-link:hover {
   text-align: left;
 }
 
-div > .profile-pic {
+div>.profile-pic {
   padding-left: 0;
   margin: 1em auto;
 }
@@ -456,50 +463,32 @@ div > .profile-pic {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .skill-container {
   width: 6.5em;
-  border: 1px solid var(--gray3);
   border-radius: 0.5em;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.25em;
   margin: 0.75em;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .skill-container:hover {
   box-shadow: 0.25em 0.25em 1em 0 rgba(26, 3, 3, 0.35);
-  transform: translateY(0.0625em);
+  transform: translate(0.125em);
   transition: box-shadow 500ms ease, transform 500ms ease;
+  outline: none;
 }
 
-.skill-container > img {
+.skill-icon {
   display: block;
   max-width: 100%;
   margin: 0 auto;
   padding: 0em;
-}
-.skill-container > .mongo {
-  display: block;
-  max-width: 21.33%;
-  margin: 0 auto;
-  padding: 0em;
-}
-
-.skill-container > p {
-  font-size: 0.8rem;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0.5em 0 0;
-}
-
-.js-skill {
-  margin: 0 auto;
-}
-
-p.skill-desc {
-  font-size: 0.7rem;
+  width: 72px;
+  height: auto
 }
 
 /* footer */
@@ -580,7 +569,7 @@ footer {
   font-size: 0.875rem;
 }
 
-.social-item + .social-item {
+.social-item+.social-item {
   margin-left: 1em;
 }
 
@@ -690,17 +679,22 @@ footer {
   text-align: center;
 }
 
-.portfolio-link + .portfolio-link {
+.portfolio-link+.portfolio-link {
   margin-left: 2em;
 }
+
 ​
+
 /* WTF, if I comment out the css below or cut/delete it, I get errors WTF, WTF, WTF!!!!!!!! It also sometimes changed the text alignment from center to left for the tagline and skills section????????*/
-.portfolio-link:hover, .portfolio-link:active {
+.portfolio-link:hover,
+.portfolio-link:active {
   color: var(--link-hover);
 }
+
 /* === CARDS END === */
 
 @media (min-width: 450px) {
+
   .hero-text h2,
   .hero-text p {
     padding-right: 0.75em;
@@ -825,6 +819,7 @@ footer {
       opacity: 0;
       transform: translateX(-21.875em);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0px);
@@ -844,6 +839,7 @@ footer {
       opacity: 0;
       transform: translateX(12.5em);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0);
@@ -866,7 +862,7 @@ footer {
     margin-left: 3em;
   }
 
-  div > .profile-pic {
+  div>.profile-pic {
     padding: 0 0 0.75em 1.5em;
     margin: 1em 1em 0 0;
   }
@@ -889,16 +885,16 @@ footer {
     margin-left: 3em;
   }
 
-  .footer-nav-item + .footer-nav-item {
+  .footer-nav-item+.footer-nav-item {
     margin-left: 1.25em;
   }
 
-  .social-item + .social-item {
+  .social-item+.social-item {
     margin-left: 0.875em;
   }
 
   /* card styles */
-  .cards + .cards {
+  .cards+.cards {
     margin-top: 2em;
   }
 
@@ -932,6 +928,7 @@ footer {
     width: 40%;
     // align-self: baseline;
   }
+
   .project-intro-div {
     width: 100%;
   }

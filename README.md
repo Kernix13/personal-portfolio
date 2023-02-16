@@ -2,7 +2,7 @@
 
 ![portfolio-thumbnail](/portfolio-thumbnail.PNG)
 
-The few files and folders used to build [my portfolio page](https://kernixwebdesign.com/resume-portfolio.html).
+The few files and folders used to build [my portfolio page](https://courageous-cuchufli-816711.netlify.app/).
 
 ## Notes
 

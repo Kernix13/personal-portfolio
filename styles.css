@@ -544,6 +544,10 @@ footer {
   cursor: pointer;
 }
 
+.current {
+  color: var(--footer-hover);
+}
+
 .social-icons {
   padding: 0;
   display: flex;

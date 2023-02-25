@@ -668,12 +668,13 @@ footer {
 
 .portfolio-links {
   display: block;
-  padding: 0.5em 0 0 1em;
+  // padding: 0.5em 0 0 1em;
+  padding-top: 0.5em;
   text-align: center;
 }
 
 .portfolio-link {
-  font-size: 1.125rem;
+  font-size: 1rem;
   display: inline-block;
   margin: 0 auto 4em;
   text-align: center;
@@ -694,7 +695,9 @@ footer {
 /* === CARDS END === */
 
 @media (min-width: 450px) {
-
+  .portfolio-link {
+    font-size: 1.125rem;
+  }
   .hero-text h2,
   .hero-text p {
     padding-right: 0.75em;

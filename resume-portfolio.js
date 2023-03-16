@@ -4,10 +4,23 @@
 const navToggle = document.getElementById("nav-toggle");
 const nav = document.getElementById("nav");
 
-navToggle.addEventListener("click", function (event) {
-  let menuOpen = nav.classList.contains("nav--visible");
-  let newMenuOpenStatus = !menuOpen;
-
+navToggle.addEventListener("click", function () {
+  /* Toggle aria-expanded value */
+  const menuOpen = nav.classList.contains("nav--visible");
+  const newMenuOpenStatus = !menuOpen;
   navToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+
   nav.classList.toggle("nav--visible");
 });
+
+// close mobile menu after link click
+document.querySelectorAll('.nav__link').forEach(link =>
+  link.addEventListener('click', () => {
+    nav.classList.remove('nav--visible');
+
+    /* Toggle aria-expanded value */
+    const menuOpen = nav.classList.contains('nav--visible');
+    const newMenuOpenStatus = menuOpen;
+    navToggle.setAttribute('aria-expanded', newMenuOpenStatus);
+  })
+);

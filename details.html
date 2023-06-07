@@ -7,10 +7,20 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles.css" />
+    <!-- <link rel="stylesheet" href="./resume-portfolio.css" /> -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@400;500&family=Open+Sans:wght@400;500&display=swap');
+    
+      .logo,
+      .footer-logo {
+        font-family: 'Dancing Script', Segoe script, cursive;
+      }
+    </style>
     <title>James Kernicky Project Details</title>
   </head>
 
   <body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     <header>
       <div class="container">
         <button id="nav-toggle" class="nav-toggle" aria-label="open navigation" tabindex="0" aria-expanded="false">
@@ -21,17 +31,17 @@
 
           <nav id="nav" class="nav">
             <ul class="nav__list nav__list--primary">
-              <li class="nav__item"><a href="./index.html#projects" class="nav__link">Projects</a></li>
-              <li class="nav__item"><a href="./index.html#skills" class="nav__link">Skills</a></li>
-              <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
-              <li class="nav__item"><a href="./index.html#contact" class="nav__link">Contact</a></li>
+              <li class="nav__item"><a href="#tarps" class="nav__link">Tarps</a></li>
+              <li class="nav__item"><a href="#guitar" class="nav__link">Guitar</a></li>
+              <li class="nav__item"><a href="#writer" class="nav__link">Writer</a></li>
+              <li class="nav__item"><a href="#wordpress" class="nav__link">WordPress</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="intro">
         <div class="detail-container">
           <h1 class="intro-title">project details</h1>
@@ -250,7 +260,7 @@
             <a class="footer-logo" href="./index.html">j.k.</a>
           </div>
 
-          <nav>
+          <nav aria-label="Footer navigation">
             <ul class="footer-nav">
               <li class="footer-nav-item current">Details Page</li>
               <li class="footer-nav-item"><a href="https://github.com/Kernix13/Kernix13/blob/main/resume.pdf"

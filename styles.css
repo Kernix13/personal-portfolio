@@ -3,8 +3,7 @@
 /* 
 font-family: 'Dancing Script', cursive;
 font-family: 'Lora', serif;
-font-family: 'Open Sans', sans-serif; 
-
+font-family: 'Open Sans', sans-serif;
 */
 
 *,
@@ -18,7 +17,7 @@ font-family: 'Open Sans', sans-serif;
   --light: #f6f4f3;
   --black: #000000;
   --dark: #333333;
-  --dark-gray: #666;
+  --dark-gray: #666666;
   --gray: #888888;
   --gray1: #999999;
   --gray2: #cccccc;
@@ -26,7 +25,7 @@ font-family: 'Open Sans', sans-serif;
   --gray4: #eeeeee;
   // --color-bg1: #f6f4f3;
   --purple: #5805cc;
-  --color-lite: #e1eef4;
+  --color-lite: #dae9f4;
   --color-dark: #2d3250;
   --link-hover: #8c6a02;
   --footer-hover: rgb(211, 157, 58);
@@ -51,24 +50,19 @@ header {
 
 h1,
 h2,
-h3,
-p {
-  font-family: "Lora", serif;
+h3 {
+  font-family: 'Lora', serif;
   letter-spacing: 0.25rem;
   font-weight: 400;
   margin: 0;
 }
 
 h4 {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   margin: 0;
 }
 
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-p::selection {
+:not(body)::selection {
   background-color: var(--color-dark);
   color: var(--white);
 }
@@ -147,6 +141,7 @@ img {
   width: 100%;
   align-self: baseline;
 }
+
 .project-intro-div {
   width: 100%;
 }
@@ -219,11 +214,13 @@ span.feature-link:hover {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .detail-container {
   width: 87%;
   max-width: 1100px;
   margin: 3em auto;
 }
+
 .projects-container {
   width: 89%;
   max-width: 1100px;
@@ -233,12 +230,29 @@ span.feature-link:hover {
 .logo {
   color: var(--color-dark);
   // font-family: 'Dancing Script', Segoe script, cursive;
-  font-family: Segoe script, cursive;
+  // font-family: Segoe script, cursive;
 
   letter-spacing: 0.0625rem;
   font-size: 2.5rem;
   -webkit-transition: color 500ms ease;
   transition: color 500ms ease;
+}
+
+.skip-to-main-content-link {
+  position: absolute;
+  background: var(--color-dark);
+  color: var(--white);
+  left: 50%;
+  padding: 0.5em;
+  height: 1.875em;
+  transform: translateY(-100%);
+  transition: transform 300ms;
+}
+
+.skip-to-main-content-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
 }
 
 /* mobile nav */
@@ -329,17 +343,24 @@ span.feature-link:hover {
   color: var(--dark);
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+  border: 1px solid transparent;
 }
 
 .nav__link:hover,
 .nav__link:focus {
   color: var(--link-hover);
+  outline: none;
+  border: 1px solid var(--link-hover);
 }
 
 .details-home {
   text-decoration: none;
   color: var(--dark);
 }
+
 .details-home:hover {
   color: var(--link-hover);
 }
@@ -370,6 +391,7 @@ span.feature-link:hover {
   font-size: 2.5rem;
   text-align: left;
 }
+
 .hero-text h2,
 .hero-text p {
   font-size: 1rem;
@@ -381,6 +403,7 @@ span.feature-link:hover {
   font-size: 3rem;
   font-weight: 400;
 }
+
 /* sections */
 .tagline,
 .contact {
@@ -410,6 +433,7 @@ span.feature-link:hover {
   text-align: center;
   margin-bottom: 2em;
 }
+
 /* PROJECTS END */
 
 .about {
@@ -470,9 +494,10 @@ div > .profile-pic {
 }
 
 .skill-container:hover {
-  box-shadow: 0.25em 0.25em 1em 0 rgba(26, 3, 3, 0.35);
-  transform: translate(0.125em);
-  transition: box-shadow 500ms ease, transform 500ms ease;
+  box-shadow: 0.125em 0.125em 1em 0 rgba(26, 3, 3, 0.35);
+  // transform: translate(0.125em);
+  transition: box-shadow 500ms ease;
+  // transition: box-shadow 500ms ease, transform 500ms ease;
   outline: none;
 }
 
@@ -500,7 +525,7 @@ footer {
   text-decoration: none;
   margin-bottom: 1em;
   // font-family: 'Dancing Script', Segoe script, cursive;
-  font-family: Segoe script, cursive;
+  // font-family: Segoe script, cursive;
   transition: color 500ms ease;
   font-size: 2rem;
 }
@@ -620,18 +645,18 @@ footer {
 
 /* ======= CARD CONTENT ======= */
 .portfolio-thumbnail {
-  // width: 55%;
+  width: 100%;
   max-width: 100%;
   // padding: 0.75em 0 0.625em;
   border-radius: 0.25em;
 }
 
 .portfolio-notes {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  padding: 1em 1em 0;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: flex-start;
 }
 
 .portfolio-notes h3 {
@@ -644,7 +669,6 @@ footer {
 .portfolio-notes p {
   font-size: 1.0625em;
   letter-spacing: normal;
-  font-family: "Lora", serif;
   font-weight: 400;
   color: var(--black);
   margin: 0;
@@ -666,28 +690,33 @@ footer {
 
 .portfolio-links {
   display: block;
-  padding: 0.5em 0 0 1em;
+  // padding: 0.5em 0 0 1em;
+  padding-top: 0.5em;
   text-align: center;
 }
 
 .portfolio-link {
-  font-size: 1.125rem;
+  font-size: 1rem;
   display: inline-block;
   margin: 0 auto 4em;
   text-align: center;
 }
 
 .portfolio-link + .portfolio-link {
-  margin-left: 2em;
+  margin-left: 0.75em;
 }
-​
-/* WTF, if I comment out the css below or cut/delete it, I get errors WTF, WTF, WTF!!!!!!!! It also sometimes changed the text alignment from center to left for the tagline and skills section????????*/
-.portfolio-link:hover, .portfolio-link:active {
+
+.portfolio-link:hover, 
+.portfolio-link:active {
   color: var(--link-hover);
 }
+
 /* === CARDS END === */
 
 @media (min-width: 450px) {
+  .portfolio-link {
+    font-size: 1.125rem;
+  }
   .hero-text h2,
   .hero-text p {
     padding-right: 0.75em;
@@ -812,6 +841,7 @@ footer {
       opacity: 0;
       transform: translateX(-21.875em);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0px);
@@ -831,6 +861,7 @@ footer {
       opacity: 0;
       transform: translateX(12.5em);
     }
+
     100% {
       opacity: 1;
       transform: translateX(0);
@@ -919,6 +950,7 @@ footer {
     width: 40%;
     // align-self: baseline;
   }
+
   .project-intro-div {
     width: 100%;
   }

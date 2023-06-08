@@ -11,18 +11,18 @@
   <meta name="title" content="Portfolio | James Kernicky">
   <meta name="description" content="Personal portfolio for James Kernicky: front-end developer and designer">
 
-  <!-- Open Graph -->
+  <!-- Open Graph, need og:image -->
   <meta property="og:site_name" content="James Kernicky">
   <meta property="og:title" content="Portfolio | James Kernicky">
   <meta property="og:description" content="Front-End Developer | Web Designer | Writer">
   <meta property="og:url" content="https://courageous-cuchufli-816711.netlify.app/">
   
-  <!-- Twitter -->
+  <!-- Twitter, need twitter:card & twitter:image -->
   <meta name="twitter:title" content="Portfolio | James Kernicky">
   <meta name="twitter:description" content="Front-End Developer | Web Designer | Writer">
   <meta name="twitter:domain" content="https://courageous-cuchufli-816711.netlify.app/">
   
-  <!-- Icons and Styles -->
+  <!-- Font Awesome and Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles.css" />
@@ -73,12 +73,10 @@
       <div class="projects-container">
         <h2 id="my-projects">my projects</h2>
 
-        <!-- CARDS BEGIN 
-          Need to use grid-template-columns for a 2 x 2 
-          -->
+        <!-- CARDS BEGIN -->
         <div class="grid">
           <!-- Card 1 -->
-          <article class="full-card" aria-label="Tarp configurations project">
+          <article aria-label="Tarp configurations project">
             <div class="inner-card-front">
               <img src="./images/tarp-configs3.jpg" class="portfolio-thumbnail" alt="Lavvu tent under a night sky for Tarp Configurations project" />
               <section class="portfolio-notes">
@@ -95,7 +93,7 @@
                 </ul>
               </section>
             </div>
-            <!-- cards-container5 end -->
+
             <div class="portfolio-links">
               <a class="portfolio-link feature-link" href="https://timely-longma-59205e.netlify.app/"
                 target="_blank">Live</a>
@@ -115,7 +113,6 @@
                   Technologies used: <span class="purple">Vanilla JS</span>,
                   <span class="purple">Bootstrap</span>
                   <!-- <span class="purple">JSON</span>, -->
-                  <!-- <span class="purple">PostCSS</span>, -->
                   <!-- <span class="purple">CORS</span> -->
                 </p>
                 <ul>
@@ -128,7 +125,6 @@
               </section>
             </div>
 
-            <!-- cards-container2 end -->
             <div class="portfolio-links">
               <a class="portfolio-link feature-link" href="https://everyguitarchord.com/what-chord-is-this.html"
                 target="_blank">Live</a>
@@ -139,7 +135,6 @@
           </article>
 
           <!-- CARD 3 -->
-
           <article class="full-card" aria-label="Writing assistant project">
             <div class="inner-card-front">
               <img src="./images/keyboard-600-wide.jpg" class="portfolio-thumbnail" alt="Computer keyboard representative of the virtual keyboard for the Writer Assistant project" />
@@ -159,7 +154,6 @@
               </section>
             </div>
 
-            <!-- cards-container1 end -->
             <div class="portfolio-links">
               <a class="portfolio-link feature-link" href="https://cool-travesseiro-9b6101.netlify.app/"
                 target="_blank">Live</a>
@@ -170,7 +164,6 @@
           </article>
 
           <!-- CARD 4 -->
-
           <article class="full-card" aria-label="Custom WordPress theme project">
             <div class="inner-card-front">
               <img src="./images/custom-wordpress-theme.jpg" class="portfolio-thumbnail"
@@ -188,9 +181,7 @@
               </section>
             </div>
 
-            <!-- cards-container3 end -->
             <div class="portfolio-links">
-              <!-- <a class="portfolio-link feature-link" href="https://kernixwebdesign.com/" target="_blank">Live</a> -->
               <a class="portfolio-link feature-link" href="https://github.com/Kernix13/tower" target="_blank">Repo</a>
               <a class="portfolio-link feature-link" href="./details.html#wordpress" aria-label="Details for Custom WordPress theme">Theme Details</a>
             </div>
@@ -198,7 +189,6 @@
         </div>
         <!-- CARDS END -->
       </div>
-      <!-- container end -->
     </section>
 
     <section id="skills" class="skills" aria-labelledby="my-skills">
@@ -219,9 +209,6 @@
           <li class="skill-container" title="SCSS">
             <img class="skill-icon" src="icons/sass.svg" alt="SCSS icon" />
           </li>
-          <!-- <li class="skill-container" title="Astro">
-            <img class="skill-icon" src="icons/astro.svg" alt="Astro icon" />
-          </li> -->
           <li class="skill-container" title="WordPress">
             <img class="skill-icon" src="icons/wordpress.svg" alt="WordPress icon" />
           </li>
@@ -230,6 +217,9 @@
           </li>
           <li class="skill-container" title="React">
             <img class="skill-icon" class="js-skill" src="icons/react.svg" alt="React icon" />
+          </li>
+          <li class="skill-container" title="Astro">
+            <img class="skill-icon" src="icons/astro.svg" alt="Astro icon" />
           </li>
           <li class="skill-container" title="Tailwind">
             <img class="skill-icon" src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind icon" />
@@ -240,8 +230,8 @@
           <!-- <li class="skill-container" title="Responsive Web Design">
             <img class="skill-icon" src="icons/rwd2.svg" alt="Responsive Web Design icon" />
           </li> -->
-          <!-- <li class="skill-container">
-            <img class="skill-icon"  src="icons/mysql.svg" alt="" />
+          <!-- <li class="skill-container" title="MySQL">
+            <img class="skill-icon"  src="icons/mysql.svg" alt="MySQL icon" />
           </li> -->
           <!-- <li class="skill-container" title="JSON">
             <img class="skill-icon" src="icons/json.svg" alt="JSON icon" />
@@ -252,20 +242,20 @@
           <li class="skill-container" title="GitHub">
             <img class="skill-icon" src="icons/github.svg" alt="GitHub icon" />
           </li>
+          <li class="skill-container" title="NPM">
+            <img class="skill-icon"  src="icons/npm.svg" alt="NPM icon" />
+          </li>
           <li class="skill-container" title="Node.js">
             <img class="skill-icon"  src="icons/nodejs3.svg" alt="Node icon" />
           </li>
-          <!-- <li class="skill-container" title="NPM">
-            <img class="skill-icon"  src="icons/npm.svg" alt="NPM icon" />
-          </li> -->
           <li class="skill-container" title="Express.js">
             <img class="skill-icon"  src="icons/icons8-express-js.svg" alt="Express icon" />
           </li>
-          <!-- <li class="skill-container">
-              <img class="skill-icon"  src="icons/vscode.svg" alt="" />
+          <!-- <li class="skill-container" title="VS Code">
+              <img class="skill-icon"  src="icons/vscode.svg" alt="VS Code icon" />
             </li> -->
-          <!-- <li class="skill-container">
-              <img class="skill-icon"  src="icons/webpack.svg" alt="" />
+          <!-- <li class="skill-container" title="webpack">
+              <img class="skill-icon"  src="icons/webpack.svg" alt="webpack icon" />
             </li> -->
           <li class="skill-container" title="MongoDB">
             <img class="skill-icon"  src="icons/mongodb-icon-1.svg" alt="MongoDB icon" />
@@ -296,26 +286,22 @@
         </div>
 
         <h3 class="photo-headline">examples of my outdoor photography</h3>
-        <div class="photos">
-          <div class="photo">
-            <div class="photo-img">
-              <ul class="gridContainer">
-                <li class="photo-item">
-                  <img src="./images/FallsBridge1-375.jpg" alt="Falls Bridge over the Schuykill River, Phila., PA" />
-                </li>
+        <div class="photo-img">
+          <ul class="gridContainer">
+            <li class="photo-item">
+              <img src="./images/FallsBridge1-375.jpg" alt="Falls Bridge over the Schuykill River, Phila., PA" />
+            </li>
 
-                <li class="photo-item horizontal">
-                  <img src="./images/boathouserow3-375.jpg"
-                    alt="Boathouse Row at sunset from Spring Garden Bridge, Phila., PA" />
-                </li>
+            <li class="photo-item horizontal">
+              <img src="./images/boathouserow3-375.jpg"
+                alt="Boathouse Row at sunset from Spring Garden Bridge, Phila., PA" />
+            </li>
 
-                <li class="photo-item">
-                  <img src="./images/LongwoodReflect-375.jpg"
-                    alt="Reflection of trees in water at Longwood Gardens, Kennett Square, PA" />
-                </li>
-              </ul>
-            </div>
-          </div>
+            <li class="photo-item">
+              <img src="./images/LongwoodReflect-375.jpg"
+                alt="Reflection of trees in water at Longwood Gardens, Kennett Square, PA" />
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -342,7 +328,6 @@
             <li class="footer-nav-item"><a href="https://github.com/Kernix13/Kernix13/blob/main/resume.pdf"
                 target="_blank">Online
                 resume</a></li>
-            <!-- <li class="footer-nav-item"><a href="https://kernixwebdesign.com/" target="_blank">Main site</a></li> -->
             <li class="footer-nav-item"><a href="https://everyguitarchord.com/contact/" target="_blank">Contact</a></li>
           </ul>
         </nav>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;500&display=swap');
 
 /* 
-font-family: 'Dancing Script', cursive;
+font-family: 'Dancing Script', Segoe script, cursive;
 font-family: 'Lora', serif;
 font-family: 'Open Sans', sans-serif;
 */
@@ -14,16 +14,12 @@ font-family: 'Open Sans', sans-serif;
 
 :root {
   --white: #ffffff;
-  --light: #f6f4f3;
   --black: #000000;
   --dark: #333333;
   --dark-gray: #666666;
   --gray: #888888;
   --gray1: #999999;
   --gray2: #cccccc;
-  --gray3: #dddddd;
-  --gray4: #eeeeee;
-  // --color-bg1: #f6f4f3;
   --purple: #5805cc;
   --color-lite: #dae9f4;
   --color-dark: #2d3250;
@@ -53,27 +49,23 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--dark);
-  line-height: 1.6;
+  line-height: 1.5;
   font-family: "Open Sans", sans-serif;
 }
 
-header {
-  background-color: var(--color-lite);
+h1 {
+  color: var(--color-dark);
 }
 
 h1,
 h2,
 h3 {
+  color: var(--color-dark);
   font-family: 'Lora', serif;
   letter-spacing: 0.25rem;
   font-weight: 400;
-  margin: 0;
-}
-
-h4 {
-  font-family: 'Lora', serif;
   margin: 0;
 }
 
@@ -101,7 +93,6 @@ ul {
 
 img {
   max-width: 100%;
-  /* display: block; */
 }
 
 .container {
@@ -114,12 +105,27 @@ img {
   color: var(--color-dark);
   font-family: 'Dancing Script', Segoe script, cursive;
   font-weight: 500;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 0.125rem;
   font-size: 2.5rem;
   -webkit-transition: color 500ms ease;
   transition: color 500ms ease;
   padding: 0.25em 0.5em;
   border: 1px solid transparent;
+}
+
+.details-home {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.details-home:hover,
+.details-home:focus {
+  color: var(--link-hover);
+  outline: none;
+}
+
+.details-home:focus {
+  border: 1px solid var(--link-hover);
 }
 
 .skip-to-main-content-link {
@@ -212,7 +218,6 @@ img {
 }
 
 .nav__list--primary {
-  text-align: center;
   padding-bottom: 1.5em;
 }
 
@@ -267,6 +272,8 @@ footer {
 .footer-logo:focus {
   color: var(--footer-hover);
   outline: none;
+}
+.footer-logo:focus {
   border: 1px solid var(--link-hover);
 }
 
@@ -291,7 +298,8 @@ footer {
   font-size: 0.875rem;
 }
 
-.footer-nav a {
+.footer-nav a,
+.social-icons a {
   text-decoration: none;
   color: var(--white);
   transition: color 500ms ease;
@@ -300,7 +308,9 @@ footer {
 }
 
 .footer-nav a:hover,
-.footer-nav a:focus {
+.footer-nav a:focus,
+.social-icons a:hover,
+.social-icons a:focus {
   color: var(--footer-hover);
   outline: none;
   border: 1px solid var(--link-hover);
@@ -316,20 +326,6 @@ footer {
   justify-content: flex-start;
 }
 
-.social-icons a {
-  color: var(--white);
-  transition: color 500ms ease;
-  padding: 0.25em;
-  border: 1px solid transparent;
-}
-
-.social-icons a:hover,
-.social-icons a:focus {
-  color: var(--footer-hover);
-  outline: none;
-  border: 1px solid var(--link-hover);
-}
-
 .social-item {
   font-size: 0.875rem;
 }
@@ -339,10 +335,10 @@ footer {
 }
 
 .copyright {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--gray2);
   text-align: center;
-  padding: 3em 0 1em;
+  padding: 1em 0;
   margin: 0;
 }
 
@@ -365,7 +361,7 @@ footer {
 }
 
 .project-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--color-dark);
   text-align: center;
   padding: 3em 0;
@@ -376,11 +372,7 @@ footer {
   margin-top: 2em;
 }
 
-// .project-section p {
-//   font-size: 1.125rem;
-// }
-
-.project-section .tech-stack {
+.tech-stack {
   font-size: 1.75rem;
 }
 
@@ -409,13 +401,9 @@ footer {
   margin: 0;
 }
 
-.section-div {
-  width: 100%;
-}
-
-.image-border {
-  border: 1px solid var(--gray3);
-}
+// .section-div {
+//   width: 100%;
+// }
 
 .project-figure img {
   flex-shrink: 0;
@@ -432,19 +420,6 @@ figcaption {
   max-width: 1100px;
   margin: 3em auto;
 }
-
-.details-home {
-  text-decoration: none;
-  color: var(--dark);
-}
-
-.details-home:hover,
-.details-home:focus {
-  color: var(--link-hover);
-  outline: none;
-  border: 1px solid var(--link-hover);
-}
-
 /* ===== end Details page ===== */
 
 /* ===== Index page ===== */
@@ -466,12 +441,6 @@ figcaption {
   color: var(--link-hover);
   outline: none;
   border: 1px solid var(--link-hover);
-}
-
-span.feature-link,
-span.feature-link:hover {
-  text-decoration: none;
-  color: var(--color-dark);
 }
 
 .projects-container {
@@ -509,10 +478,8 @@ span.feature-link:hover {
   display: block;
   max-width: 100%;
   width: 100%;
-  border-top: 1px solid var(--gray4);
-  border-right: 1px solid var(--gray3);
-  border-bottom: 1px solid var(--gray2);
-  border-left: 1px solid var(--gray2);
+  border-top: 1px solid var(--gray2);
+  border-right: 1px solid var(--gray2);
 }
 
 .hero-text {
@@ -521,6 +488,7 @@ span.feature-link:hover {
 }
 
 .hero-text h1 {
+  color: var(--color-dark);
   font-size: 2.5rem;
   text-align: left;
 }
@@ -535,6 +503,10 @@ span.feature-link:hover {
 .intro-title {
   font-size: 3rem;
   font-weight: 400;
+  text-align: center;
+}
+.intro-title + p {
+  text-align: center;
 }
 
 /* sections */
@@ -568,7 +540,6 @@ span.feature-link:hover {
 }
 
 /* PROJECTS END */
-
 .about {
   background-color: var(--color-lite);
   text-align: left;
@@ -628,8 +599,8 @@ div > .profile-pic {
 
 .skill-container:hover {
   box-shadow: 0.125em 0.125em 1em 0 rgba(26, 3, 3, 0.35);
-  // transform: translate(0.125em);
   transition: box-shadow 500ms ease;
+  // transform: translate(0.125em);
   // transition: box-shadow 500ms ease, transform 500ms ease;
   outline: none;
 }
@@ -672,7 +643,6 @@ div > .profile-pic {
 .portfolio-thumbnail {
   width: 100%;
   max-width: 100%;
-  // padding: 0.75em 0 0.625em;
   border-radius: 0.25em;
 }
 
@@ -711,13 +681,11 @@ div > .profile-pic {
 
 .portfolio-links {
   display: block;
-  // padding: 0.5em 0 0 1em;
   margin-top: 0.75em;
   text-align: center;
 }
 
 .portfolio-link {
-  // font-size: 1rem;
   display: inline-block;
   margin: 0 auto 4em;
   text-align: center;
@@ -734,7 +702,6 @@ div > .profile-pic {
 .portfolio-link.feature-link {
   font-size: 0.875rem;
 }
-
 /* CARDS END */
 /* ===== End Index page ===== */
 
@@ -819,7 +786,7 @@ div > .profile-pic {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-    flex-shrink: 0;
+    // flex-shrink: 0;
     margin: 2em 0;
   }
 
@@ -898,10 +865,6 @@ div > .profile-pic {
     font-size: 0.875rem;
     margin-left: -2em;
     margin-right: 1em;
-  }
-
-  .about-container {
-    margin-left: 3em;
   }
 
   div > .profile-pic {

@@ -5,24 +5,33 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>James Kernicky Portfolio</title>
+  <meta name="title" content="Portfolio | James Kernicky">
   <meta name="description" content="Personal portfolio for James Kernicky: front-end developer and designer">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="James Kernicky">
+  <meta property="og:title" content="Portfolio | James Kernicky">
+  <meta property="og:description" content="Front-End Developer | Web Designer | Writer">
+  <meta property="og:url" content="https://courageous-cuchufli-816711.netlify.app/">
+  
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Portfolio | James Kernicky">
+  <meta name="twitter:description" content="Front-End Developer | Web Designer | Writer">
+  <meta name="twitter:domain" content="https://courageous-cuchufli-816711.netlify.app/">
+  
+  <!-- Icons and Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles.css" />
-  <!-- <link rel="stylesheet" href="./resume-portfolio.css" /> -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@400;500&family=Open+Sans:wght@400;500&display=swap');
 
-    .logo, .footer-logo {
-      font-family: 'Dancing Script', Segoe script, cursive;
-    }
-  </style>
-  <title>James Kernicky Portfolio</title>
 </head>
 
 <body>
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-  <header>
+  <header aria-label="top navigation bar">
     <div class="container"> 
       <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" tabindex="0" aria-expanded="false">
         <span class="hamburger"></span>
@@ -197,10 +206,9 @@
         <h2 id="my-skills" title="toolkit">my toolkit</h2>
         <!-- https://www.svgrepo.com/vectors/api/ -->
         <!-- https://icons8.com/icons/set/html -->
-        <ul class="my-skills">
+        <ul class="my-skills container">
           <li class="skill-container" title="HTML5">
             <img class="skill-icon" src="icons/html-5.svg" alt="HTML5 icon" />
-            <!-- <p>HTML</p> -->
           </li>
           <li class="skill-container" title="CSS">
             <img class="skill-icon" src="icons/css3.svg" alt="CSS icon" />
@@ -229,12 +237,9 @@
           <li class="skill-container" title="Bootstrap">
             <img class="skill-icon" src="/icons/bootstrap.svg" alt="Bootstrap icon" />
           </li>
-          <li class="skill-container" title="Responsive Web Design">
+          <!-- <li class="skill-container" title="Responsive Web Design">
             <img class="skill-icon" src="icons/rwd2.svg" alt="Responsive Web Design icon" />
-          </li>
-          <!-- <li class="skill-container">
-              <img class="skill-icon" src="icons/jquery.svg" alt="" />
-            </li> -->
+          </li> -->
           <!-- <li class="skill-container">
             <img class="skill-icon"  src="icons/mysql.svg" alt="" />
           </li> -->
@@ -247,15 +252,12 @@
           <li class="skill-container" title="GitHub">
             <img class="skill-icon" src="icons/github.svg" alt="GitHub icon" />
           </li>
-          <!-- <li class="skill-container">
-            <img class="skill-icon"  src="icons/terminal.svg" alt="" />
-          </li> -->
           <li class="skill-container" title="Node.js">
             <img class="skill-icon"  src="icons/nodejs3.svg" alt="Node icon" />
           </li>
-          <li class="skill-container" title="NPM">
+          <!-- <li class="skill-container" title="NPM">
             <img class="skill-icon"  src="icons/npm.svg" alt="NPM icon" />
-          </li>
+          </li> -->
           <li class="skill-container" title="Express.js">
             <img class="skill-icon"  src="icons/icons8-express-js.svg" alt="Express icon" />
           </li>
@@ -271,12 +273,6 @@
           <li class="skill-container" title="Mongoose.js">
             <img class="skill-icon"  src="icons/icons8-mongoose.svg" alt="Mongoose icon" />
           </li>
-          <!-- <li class="skill-container">
-              <img class="skill-icon"  src="icons/firebase.svg" alt="" />
-            </li> -->
-          <!-- <li class="skill-container">
-            <img class="skill-icon"  src="icons/api-svgrepo-com.svg" alt="" />
-          </li> -->
           <li class="skill-container" title="Figma">
             <img class="skill-icon" src="icons/figma.svg" alt="Figma icon" />
           </li>
@@ -333,7 +329,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer aria-label="footer">
     <div class="container">
       <div class="footer-flex">
         <div>
@@ -351,7 +347,7 @@
           </ul>
         </nav>
   
-        <ul class="social-icons">
+        <ul class="social-icons" aria-label="social links">
           <li class="social-item">
             <a href="https://www.linkedin.com/in/jim-kernicky/" target="_blank" aria-label="View LinkedIn page"
               title="My LinkedIn Profile"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
@@ -371,7 +367,7 @@
           </li>
         </ul>
       </div>
-      <p class="copyright">&copy; 2021 James Kernicky</p>
+      <p class="copyright" aria-label="copyright">&copy; 2021 James Kernicky</p>
     </div>
   </footer>
 

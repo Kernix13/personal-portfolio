@@ -496,6 +496,10 @@ figcaption {
   font-weight: 400;
 }
 
+#intro-title {
+  font-size: 4rem;
+}
+
 .intro-title {
   font-size: 3rem;
   font-weight: 400;

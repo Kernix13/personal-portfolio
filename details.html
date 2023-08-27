@@ -43,10 +43,12 @@
 
           <nav id="nav" class="nav" aria-label="Main navigation">
             <ul class="nav__list nav__list--primary">
-              <li class="nav__item"><a href="#tarps" class="nav__link">Tarps</a></li>
-              <li class="nav__item"><a href="#guitar" class="nav__link">Guitar</a></li>
+              <li class="nav__item"><a href="#store" class="nav__link">Store</a></li>
+              <li class="nav__item"><a href="#retreat" class="nav__link">Retreat</a></li>
               <li class="nav__item"><a href="#writer" class="nav__link">Writer</a></li>
-              <li class="nav__item"><a href="#wordpress" class="nav__link">WordPress</a></li>
+              <li class="nav__item"><a href="#guitar" class="nav__link">Guitar</a></li>
+              <li class="nav__item"><a href="#tarps" class="nav__link">Tarps</a></li>
+              <!-- <li class="nav__item"><a href="#wordpress" class="nav__link">Theme</a></li> -->
             </ul>
           </nav>
         </div>
@@ -58,6 +60,61 @@
         <div class="detail-container">
           <h1 id="intro-title" class="intro-title">project details</h1>
           <p>details, descriptions, and notes for my projects</p>
+        </div>
+      </section>
+
+      <!-- MusicStore -->
+      <section id="store" class="project-section" aria-label="retreat">
+        <h2>MusicStore</h2>
+        <div class="detail-container">
+          <h3 class="tech-stack">Tech used</h3>
+          <div class="tech-images">
+            <img src="./icons/nodejs2.svg" width="80" height="80" alt="Node.js icon" />
+            <img src="https://img.icons8.com/color/40/000000/react-native.png" alt="React icon" />
+            <img src="https://img.icons8.com/color/48/000000/redux.png" alt="Redux icon" />
+            <img src="https://img.icons8.com/color/48/000000/express-js.png" alt="Express.js icon" />
+            <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB icon" />
+            <img src="https://img.icons8.com/color/48/000000/mongoose.png" alt="Mongoose icon" />
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" width="48" height="48" alt="Bootstrap icon" />
+            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
+              alt="GitHub icon" width="44" height="36" />
+          </div>
+          <div class="section-header-row">
+            <img src="./images/music-store-1.png" alt="" class="project-image-primary image-xsmall" />
+            <div class="project-intro-div">
+              <p class="project-intro-p">This is an ecommerce app that can be used to sell any category of products. The only thing that is needed it uploading the product images and information, and of course getting users.</p>
+              <p>
+                This app has a number of nice features like pagination for the products on the home page and for the admin pages. The user also has the option to view their orders and to edit their name, email address, and password.
+              </p>
+              <p>I deployed the <a href="https://musicstore-p45e.onrender.com/" target="_blank">live version on Render</a> or take a look at my <a
+                  href="https://github.com/Kernix13/music-store-mern-ecommerce" target="_blank">code on GitHub</a>.</p>
+            </div>
+          </div>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>Why I built this app</h3>
+              <p>I feel that an ecommerce app is the pinnacle of web development that is not enterprise level. I hope to be able to make improvements to this app as I continue to review the code</p>
+            </div>
+            <div class="section-div">
+              <h3>Challenges encountered</h3>
+              <p>This project had many moving parts which was overwhelming at times. The part that I found most challenging was using React Redux.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/music-store-2.png" alt="" class="project-image image-small" />
+            <figcaption>Admin page for editing the products on the site</figcaption>
+          </figure>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>What did I learn?</h3>
+              <p>This was the second time I built an app using the MVC architecture and I would like to get a better fell for that approach. I also learned to create collections in Postman which was extremely helpful.</p>
+            </div>
+            <div class="section-div">
+              <h3>Is the app complete?</h3>
+              <p>No. I would like to give the user the option to edit and/or delete their product reviews. I also have style changes I would like to make on the admin pages. I would also like to add a Stripe payment option.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -80,20 +137,20 @@
           <div class="section-header-row">
             <img src="./images/yelpretreat-home_550.2.png" alt="" class="project-image-primary image-xsmall" />
             <div class="project-intro-div">
-              <p class="project-intro-p">This project is a variation of Colt Steele's YelpCamp which was meant to be a Yelp-like review site for campsites, or for my project, reviews for various types of retreats.</p>
+              <p class="project-intro-p">This project is a Yelp-like review site for various types of retreats. The retreats can be found via the cluster map, or by retreat type.</p>
               <p>The best feature of the app is the ability for users to create accounts and have their passwords, usernames, and emails stored in Mongo. Then a user can create reviews for existing retreats or create their own retreat listing.</p>
-              <p>I deployed the <a href="https://yelp-retreat.onrender.com/" target="_blank">live version on Render</a> (<em>long loading time</em>) or take a look at my <a
+              <p>I deployed the <a href="https://yelp-retreat.onrender.com/" target="_blank">live version on Render</a> or take a look at my <a
                   href="https://github.com/Kernix13/yelp-retreat" target="_blank">code on GitHub</a>.</p>
             </div>
           </div>
           <div class="section-row">
             <div class="section-div">
               <h3>Why I built this app</h3>
-              <p>YelpCamp was the final project for Colt Steele's Web Developer Bootcamp course on Udemy. I built YelpRetreat at the same time but I made changes to try to make it a little more unique.</p>
+              <p>YelpRetreat is a variation of a full-stack app that I built. I wanted to change not only the styles, but also the complexity by creating different types of retreats.</p>
             </div>
             <div class="section-div">
               <h3>Challenges encountered</h3>
-              <p>This was my second Udemy full-stack app. It was not long before the code overwhelmed me. I hate to say it but I resorted to a lot of <em>copy &amp; paste</em> for large blocks of code. </p>
+              <p>I found the documentation for Mongoose to be very confusing. It took a long time to find the methods and options that I needed.</p>
             </div>
           </div>
           <figure class="project-figure">
@@ -110,61 +167,6 @@
             <div class="section-div">
               <h3>Is the app complete?</h3>
               <p>There are features and style changes that I would like to make. One thing I would like to add is to prevent a retreat owner from being able to add a review to their own listing. It would also be nice to have an average overall rating for each retreat.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Flixx -->
-      <section id="flixx" class="project-section" aria-label="flixx">
-        <h2>TMDB Flixx App</h2>
-        <div class="detail-container">
-          <h3 class="tech-stack">Tech used</h3>
-          <div class="tech-images">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
-            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" />
-            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
-            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
-            alt="GitHub icon" width="44" height="36" />
-            <img src="./icons/netlify24.png" width="50" height="40" alt="Netlify icon" />
-          </div>
-          <div class="section-header-row">
-            <img src="./images/flixx-home_550.png"
-              alt=""
-              class="project-image-primary image-xsmall" />
-            <div class="project-intro-div">
-              <p class="project-intro-p">This app uses The Movie Database API to show cards for the most popular movies and TV shows. The cards have links to the details for each show or movie. On the details page, there are also links to YouTube videos and to a Cast & Crew page for the show/movie.</p>
-              <p>The cast and crew page has cards for the cast members with links to a personal page for each cast member. The crew cards are the same but I split the cards up by department.</p>
-              <p>You can take a look at the <a
-                  href="https://neon-sawine-bdfd31.netlify.app/" target="_blank">live version</a> on Netlify and the <a href="https://github.com/Kernix13/tmdb-flixx-app"
-                  target="_blank">code on GitHub</a>.</p>
-            </div>
-          </div>
-          <div class="section-row">
-            <div class="section-div">
-              <h3>Why this app for my portfolio</h3>
-              <p>The design and styles were from a Brad Traversy project. I prefer to design my own projects, but the design is nice. I chose to add this project to my portfolio because I added additional API calls and details that were not part of the course project.</p>
-            </div>
-            <div class="section-div">
-              <h3>Challenges encountered</h3>
-              <p>It took me some time to figure out how to get the movie/show title onto the cast and crew page. I also had to create different cards for members with or without a photo. And finally, sectioning the crew by department took a good amount of time and code.</p>
-            </div>
-          </div>
-          <figure class="project-figure">
-            <img src="./images/flixx-person-page_550.png"
-              alt=""
-              class="project-image image-small" />
-            <figcaption>Example of the cast / crew personal details page</figcaption>
-          </figure>
-          <div class="section-row">
-            <div class="section-div">
-              <h3>What did I learn?</h3>
-              <p>Working with an API and using the results from fetching data to make another API call was insightful. I also became very comfortable <em>properly</em> manipulating the dom with methods such as <code>createElement</code>, <code>createTextNode</code>, and <code>setAttribute</code>.</p>
-            </div>
-            <div class="section-div">
-              <h3>Is the app complete?</h3>
-              <p>I would like to use Netlify functions so that I can hide my API key but I am unsure how to use export.handler with all the files that rely on my API key, or the results from fetching the data.</p>
             </div>
           </div>
         </div>
@@ -193,7 +195,7 @@
               <p class="project-intro-p">I built this app for my aunt who has cerebral palsy. My hope was that she would be
                 able to select words and phrases for better emails to friends and family.</p>
               <p>If you know someone with a disability that could use this tool then send them to the <a
-                  href="https://cool-travesseiro-9b6101.netlify.app/" target="_blank">live version</a> and have someone get in
+                  href="https://eloquent-pie-e9cd08.netlify.app/" target="_blank">live version</a> and have someone get in
                 touch with me. Also, take a look at the <a href="https://github.com/Kernix13/typescript-virtual-keyboard"
                   target="_blank">code on GitHub</a>.</p>
             </div>
@@ -281,6 +283,67 @@
         </div>
       </section>
 
+      <!-- Flixx -->
+      <section id="flixx" class="project-section" aria-label="flixx">
+        <h2>TMDB Flixx App</h2>
+        <div class="detail-container">
+          <h3 class="tech-stack">Tech used</h3>
+          <div class="tech-images">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" />
+            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
+            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
+              alt="GitHub icon" width="44" height="36" />
+            <img src="./icons/netlify24.png" width="50" height="40" alt="Netlify icon" />
+          </div>
+          <div class="section-header-row">
+            <img src="./images/flixx-home_550.png" alt="" class="project-image-primary image-xsmall" />
+            <div class="project-intro-div">
+              <p class="project-intro-p">This app uses The Movie Database API to show cards for the most popular movies and TV
+                shows. The cards have links to the details for each show or movie. On the details page, there are also links
+                to YouTube videos and to a Cast & Crew page for the show/movie.</p>
+              <p>The cast and crew page has cards for the cast members with links to a personal page for each cast member. The
+                crew cards are the same but I split the cards up by department.</p>
+              <p>You can take a look at the <a href="https://neon-sawine-bdfd31.netlify.app/" target="_blank">live version</a>
+                on Netlify and the <a href="https://github.com/Kernix13/tmdb-flixx-app" target="_blank">code on GitHub</a>.
+              </p>
+            </div>
+          </div>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>Why this app for my portfolio</h3>
+              <p>The design and styles were from a Brad Traversy project. I prefer to design my own projects, but the design
+                is nice. I chose to add this project to my portfolio because I added additional API calls and details that
+                were not part of the course project.</p>
+            </div>
+            <div class="section-div">
+              <h3>Challenges encountered</h3>
+              <p>It took me some time to figure out how to get the movie/show title onto the cast and crew page. I also had to
+                create different cards for members with or without a photo. And finally, sectioning the crew by department
+                took a good amount of time and code.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/flixx-person-page_550.png" alt="" class="project-image image-small" />
+            <figcaption>Example of the cast / crew personal details page</figcaption>
+          </figure>
+          <div class="section-row">
+            <div class="section-div">
+              <h3>What did I learn?</h3>
+              <p>Working with an API and using the results from fetching data to make another API call was insightful. I also
+                became very comfortable <em>properly</em> manipulating the dom with methods such as
+                <code>createElement</code>, <code>createTextNode</code>, and <code>setAttribute</code>.</p>
+            </div>
+            <div class="section-div">
+              <h3>Is the app complete?</h3>
+              <p>I would like to use Netlify functions so that I can hide my API key but I am unsure how to use export.handler
+                with all the files that rely on my API key, or the results from fetching the data.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Tarp setups -->
       <section id="tarps" class="project-section" aria-label="tarps">
         <h2 class="section-title">Tarp Configurations Calculator</h2>
@@ -353,6 +416,7 @@
       </section>
 
       <!-- WordPress custome theme -->
+      <!--  
       <section id="wordpress" class="project-section wordpress" aria-label="wordpress">
         <h2>Custom WordPress Theme</h2>
         <div class="detail-container">
@@ -387,7 +451,7 @@
             <img src="./images/kwd2.png" alt="Screenshot of the services card from the Home page" class="project-image image-small" />
             <figcaption>Services card from home page</figcaption>
           </figure>
-          <!-- <img src="./images/kwd2.png" alt="" /> -->
+          
           <div class="section-row">
             <div class="section-div">
               <h3>What did I learn?</h3>
@@ -400,6 +464,8 @@
           </div>
         </div>
       </section>
+      -->
+      
     </main>
 
     <footer aria-label="footer">

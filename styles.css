@@ -528,6 +528,10 @@ figcaption {
   padding-bottom: 1em;
 }
 
+.about h2 {
+  text-align: center;
+}
+
 /* PROJECTS SECTIOM */
 .projects {
   background-color: var(--color-lite);

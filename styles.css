@@ -953,7 +953,8 @@ div > .profile-pic {
 }
 
 .testimonial-site {
-  font-size: 75%;
+  font-size: 87.5%;
+  letter-spacing: 0.125rem;
 }
 
 .blockquote {

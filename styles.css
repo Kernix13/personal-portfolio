@@ -25,6 +25,13 @@ font-family: 'Open Sans', sans-serif;
   --color-dark: #2d3250;
   --link-hover: #8c6a02;
   --footer-hover: rgb(211, 157, 58);
+
+  --bg-dark_block: hsl(210, 19%, 8%);
+  // --bg-dark_block: hsl(215, 12%, 19%);
+  --green: hsl(93, 86%, 51%);
+  // --purple: hsl(283, 100%, 85%);
+  --orange: hsl(41, 98%, 57%);
+  --red: hsl(0, 97%, 75%);
 }
 
 @font-face {
@@ -416,6 +423,11 @@ figcaption {
   max-width: 1100px;
   margin: 3em auto;
 }
+
+.detail-container h4 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
 /* ===== end Details page ===== */
 
 /* ===== Index page ===== */
@@ -712,6 +724,35 @@ div > .profile-pic {
   font-size: 0.875rem;
 }
 /* CARDS END */
+
+/* START CLIENT SECTION */
+.client-heading {
+  text-align: center;
+}
+.client-img {
+  max-width: 100%;
+  box-shadow: 0.125em 0.125em 1em 0.125em rgba(26, 3, 3, 0.25);
+  border: 3px solid rgba(26, 3, 3, 0.25);
+  // margin: 0 auto;
+}
+
+.client-link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link-image {
+  margin-top: 2em;
+}
+
+.client-col p:nth-child(odd) {
+  margin-bottom: 0;
+}
+
+.client-col p:nth-child(even) {
+  margin-top: 0;
+}
 /* ===== End Index page ===== */
 
 @media (min-width: 450px) {
@@ -790,15 +831,6 @@ div > .profile-pic {
     align-items: flex-end;
   }
 
-  .section-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    // flex-shrink: 0;
-    margin: 2em 0;
-  }
-
   .section-header-row {
     display: flex;
     flex-direction: column;
@@ -809,6 +841,15 @@ div > .profile-pic {
     margin: 2em 0;
   }
 
+  .section-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    // flex-shrink: 0;
+    margin: 2em 0;
+  }
+ 
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
@@ -930,6 +971,41 @@ div > .profile-pic {
   }
 }
 
+@media (min-width: 992px) {
+  .link-image {
+      margin-top: 0;
+    }
+
+  .detail-container h4 {
+    margin: 2em 0 -1.5em;
+  }
+  .client-row {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .client-col {
+    width: 50%;
+  }
+
+  .client-col p {
+    margin: 0;
+  }
+
+  .client-col p:nth-child(odd) {
+    padding: 0;
+  }
+
+  .client-col p:nth-child(even) {
+    margin-bottom: 1em;
+  }
+}
+
 /* testimonials */
 .wrapper {
   display: flex;
@@ -1007,6 +1083,11 @@ div > .profile-pic {
     width: 50%;
     height: auto;
   }
+  
+  // .client-image {
+  //   width: 50%;
+  //   margin-top: 2rem;
+  // }
 
   .tagline,
   .contact,
@@ -1055,5 +1136,80 @@ div > .profile-pic {
   .project-image-primary {
     width: 50%;
   }
+}
+
+/* code, kbd, var elements */
+kbd,
+samp,
+var {
+  font-family: "Lucida Console", 'Courier New', Courier, Monaco, monospace;
+  font-weight: 600;
+}
+
+code {
+  font-family: "Lucida Console", 'Courier New', Courier, Monaco, monospace;
+  font-size: 90%;
+  line-height: 1.5;
+  padding: 0.15em 0.2em 0.05em;
+  border-radius: 0.3em;
+  // tab-size: 4;
+  // text-align: left;
+  // box-shadow: black 1px 1px 0.3em -0.1em inset;
+}
+
+// p > code,
+// h3 > code,
+// li > code,
+// a > code {
+//   background-color: var(--bg-dark_block);
+//   // background-color: #d0d7df;
+//   color: var(--white);
+//   // color: #000;
+// }
+
+var {
+  font-size: 87.5%;
+  font-style: oblique;
+  // color: gray;
+}
+
+pre {
+  // font-family: 'Courier New', Courier, monospace;
+  // font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Lucida Console", 'Courier New', Courier, Monaco, monospace;
+  font-weight: 400;
+}
+
+kbd {
+  display: inline-block;
+  font-size: 87.5%;
+  line-height: 1;
+
+  // background-color: #d9edfe;
+  background-color: #e1ebf5;
+  color: #555;
+
+  padding: 0.0625em 0.1875em;
+  border: 1px solid #888;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+}
+
+.green {
+  color: var(--green);
+}
+.purple {
+  color: var(--purple);
+}
+.orange {
+  color: var(--orange);
+}
+.red {
+  color: var(--red);
+}
+
+.blue,
+.boolean {
+  color: var(--blue);
 }
 

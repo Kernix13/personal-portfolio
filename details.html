@@ -43,13 +43,13 @@
 
           <nav id="nav" class="nav" aria-label="Main navigation">
             <ul class="nav__list nav__list--primary">
-              <li class="nav__item"><a href="#store" class="nav__link">Store</a></li>
-              <li class="nav__item"><a href="#retreat" class="nav__link">Retreat</a></li>
-              <li class="nav__item"><a href="#writer" class="nav__link">Writer</a></li>
-              <li class="nav__item"><a href="#guitar" class="nav__link">Guitar</a></li>
-              <li class="nav__item"><a href="#flixx" class="nav__link">Flixx</a></li>
-              <li class="nav__item"><a href="#tarps" class="nav__link">Tarps</a></li>
-              <!-- <li class="nav__item"><a href="#wordpress" class="nav__link">Theme</a></li> -->
+              <!-- <li class="nav__item"><a href="#store" class="nav__link">Store</a></li> -->
+              <!-- <li class="nav__item"><a href="#retreat" class="nav__link">Retreat</a></li> -->
+              <li class="nav__item"><a href="#writer" class="nav__link">Writer App</a></li>
+              <li class="nav__item"><a href="#guitar" class="nav__link">Guitar App</a></li>
+              <!-- <li class="nav__item"><a href="#flixx" class="nav__link">Flixx</a></li> -->
+              <li class="nav__item"><a href="#tarps" class="nav__link">Tarp App</a></li>
+              <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
             </ul>
           </nav>
         </div>
@@ -65,6 +65,7 @@
       </section>
 
       <!-- MusicStore -->
+      <!--
       <section id="store" class="project-section" aria-label="retreat">
         <h2>MusicStore</h2>
         <div class="detail-container">
@@ -119,15 +120,16 @@
           </div>
         </div>
       </section>
+      -->
 
       <!-- Yelp -->
+      <!--
       <section id="retreat" class="project-section" aria-label="retreat">
         <h2>YelpRetreat</h2>
         <div class="detail-container">
           <h3 class="tech-stack">Tech used</h3>
           <div class="tech-images">
             <img src="./icons/nodejs2.svg" width="80" height="80" alt="Node.js icon" />
-            <!-- <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js icon" /> -->
             <img src="https://img.icons8.com/color/48/000000/express-js.png" alt="Express.js icon" />
             <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB icon" />
             <img src="https://img.icons8.com/color/48/000000/mongoose.png" alt="Mongoose icon" />
@@ -173,8 +175,10 @@
           </div>
         </div>
       </section>
+      -->
 
       <!-- Writer assistant -->
+      
       <section id="writer" class="project-section" aria-label="writer">
         <h2>Writing Assistant</h2>
         <div class="detail-container">
@@ -258,7 +262,7 @@
             </div>
             <div class="section-div">
               <h3>How I built this app</h3>
-              <p>I did not know when I start that <code>addEventListener</code> does not return anything. That was a learning momemnt. So I started simple with a function to do the majority of the work. And then I started adding more functionality which required more functions.</p>
+              <p>There were a number of steps I needed to do like get the get the notes values for the user fret #'s, convert them to either sharp or flat notes, strip out duplicate notes, and use the <code>every()</code> method to return the chord name if valid.</p>
             </div>
           </div>
           <figure class="project-figure">
@@ -281,6 +285,7 @@
       </section>
 
       <!-- Flixx -->
+      <!--
       <section id="flixx" class="project-section" aria-label="flixx">
         <h2>TMDB Flixx App</h2>
         <div class="detail-container">
@@ -340,6 +345,7 @@
           </div>
         </div>
       </section>
+      -->
 
       <!-- Tarp setups -->
       <section id="tarps" class="project-section" aria-label="tarps">
@@ -400,7 +406,7 @@
             <div class="section-div">
               <h3>Final thoughts</h3>
               <p>Using <code>useContext</code> was better than <code>useState</code> but I would like to incorporate useReducer for my state values. I
-                would also prefer to create my own <code>webpack.config</code> file for greater control.</p>
+                would also prefer to create my own <var>webpack.config</var> file for greater control.</p>
             </div>
           </div>
           <figure class="project-figure">
@@ -410,6 +416,182 @@
           </figure>
         </div>
       </section>
+
+      <!-- WordPress Clients -->
+      <section id="clients" class="project-section wordpress" aria-label="wordpress">
+        <h2>WordPress Clients</h2>
+        <div class="detail-container">
+          <h3 class="tech-stack">Tech used</h3>
+          <div class="tech-images">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
+            <img height="48" src="https://user-images.githubusercontent.com/25181517/183345419-fe3e8e5a-9bbb-4c34-9121-463721cd9bfe.jpg" alt="WordPress icon" title="Wordpress" />
+            <img src="./icons/elementor-48.png" width="48" alt="Elementor icon" />
+            <!-- https://icons8.com/icon/x1loO64P50XH/elementor-the-wordpress-page-builder%2C-a-simple%2C-intuitive-drag-and-drop-interface. -->
+            <!-- <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/php.png" alt="PHP icon" width="60" height="60" /> -->
+            <!-- <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" /> -->
+            <!-- <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png" alt="GitHub icon" width="44" height="36" /> -->
+          </div>
+          <div class="section-header-row">
+            <img src="./images/WordPress.jpg" alt="" class="project-image-primary image-xsmall" />
+            <!-- <img src="./images/custom-wordpress-theme.jpg" alt="" class="project-image-primary image-xsmall" /> -->
+            <div class="project-intro-div">
+              <p class="project-intro-p">The details below are not what I would call <em>projects</em>, but are rather the steps I took to help different website owners who built their sites with WordPress.</p>
+              <p>To date I have done unpaid volunteer work for two WordPress site owners. Another client is from Fiverr who was unfamiliar with how WordPress works and decided to choose a Block theme to build his website.</p>
+              <p>I had a 4th client that also is from Fiverr but it was not WordPress-related, but instead involved HTML. Specifically, that client provided me with PDF files with tables that needed to be converted to HTML <code>&lt;table&gt;</code> elements.</p>
+              <p>As I get other clients for any type of website needs, I will add a short summary of the details for each job. Here are summaries for the 4 clients mentioned above.</p>
+            </div>
+          </div>
+
+          <!-- Client section 1 -->
+          <h3 class="client-heading">#1 Camping Ventures Hub</h3>
+          <div class="client-row">
+            <div class="client-col">
+              <p>The client's website <a href="https://campingventureshub.com/" target="_blank">Camping Ventures Hub</a> was an affiliate marketing blog. The job had 2 milestones, the first for determining why the domain would not load, and the second for building or "fixing" 5 more pages.</p>
+              <p>The client chose a Block theme named <em>Yith Wonder</em> but he was unfamiliar with WordPress and so knew nothing about the admin area, Gutenberg blocks, or block themes.</p>
+              <p>He also configured the WordPress admin area incorrectly and had his host company create a staging area which was totally unnecessary for a brand new website with no pages.</p>
+            </div>
+            <div class="client-col">
+              <a class="client-link link-image" href="https://campingventureshub.com/" target="_blank"><img src="./images/camphub.jpg" alt=""
+                  class="client-img"></a>
+            </div>
+          </div>
+          <h4>Issues and the Solutions:</h4>
+          <div class="client-row">
+            <div class="client-col">
+              <p>1. <strong>Issue</strong>: The staging area link worked but the domain link was timing out.</li>
+              <p><strong>Solution</strong>: I noticed that the client added the staging area link in the Site Address and WordPress Address URL fields which means his domain had no pages. Bluehost fixed the error.</p>
+              <p>2. <strong>Issue</strong>: Home page images were 100's of kilobytes. They were sized to 800px wide but displayed at ~ 300px wide.
+              </p>
+              <p><strong>Solution</strong>: I brought the images into Photoshop, reduced the size, optimized them for the web, and then
+                uploaded the new lightweight images to the media library.</p>
+              <p>3. <strong>Issue</strong>: The footer lacked the elements and styling that the client wanted.</p>
+              <p><strong>Solution</strong>: I edited one of the footer template files and added the current elements including the newsletter form.</p>
+              <p>4. <strong>Issue</strong>: The header lacked a proper menu with links to the category pages.</p>
+              <p><strong>Solution</strong>: I created the categories since they did not exist and then added them to the header menu.</p>
+            </div>
+            <div class="client-col">
+              <p>5. <strong>Issue</strong>: There were no blog posts to see the styling for the blog page, categories pages, or single post pages.</li>
+              <p><strong>Solution</strong>: I created a single sample post for each category which allowed us to see how the templates displayed on the front-end.</p>
+              <p>6. <strong>Issue</strong>: The Home, Archive, and Single templates had limited styling and needed layout changes.</p>
+              <p><strong>Solution</strong>: I edited the templates per the client&apos;s requests for the features and styles he wanted.</p>
+              <p>7. <strong>Issue</strong>: No favicon.</li>
+              <p><strong>Solution</strong>: I brought his logo into Inkscape, removed the wordmark, and used just the graphic as the favicon.</p>
+              <p>8. <strong>Issue</strong>: The client&apos;s lack of knowledge of WordPress.</li>
+              <p><strong>Solution</strong>: I created a draft post with notes about the template files, Gutenberg blocks, and theme options so that he would be able to continue building the site on his own.</p>
+            </div>
+          </div>
+
+          <!-- Client section 2 -->
+          <h3 class="client-heading">#2 propMeUp</h3>
+          <div class="client-row">
+            <div class="client-col">
+              <a class="client-link link-image" href="https://propmeup.net/" target="_blank"><img src="./images/propmeup.jpg" alt=""
+                  class="client-img"></a>
+            </div>
+            <div class="client-col">
+              <p>The client's website <a href="https://propmeup.net/" target="_blank">propMeUp</a> is a non-profit charity site that was started by a WordPress designer from Fiverr but who abandoned the project.</p>
+              <p>The owner was on a timeline to obtain funding for the charity and 3 pages needed to be built and the images on the other pages needed to be replaced.</p>
+              <p>The additional issue for the client is that the site was built using the page-builder Elementor and the original designer installed a dozen plugins in support of Elementor.</p>
+              <p>This was a volunteer job for a person in my local area who had no knowledge of WordPress let alone Elementor and a host of plugins.</p>
+            </div>
+          </div>
+          <h4>Issues and the Solutions:</h4>
+          <div class="client-row">
+            <div class="client-col">
+              <p>1. <strong>Issue</strong>: The Events and Contact pages had not been created and therefore lacked content.</li>
+              <p><strong>Solution</strong>: I created the pages, copied design elements from the Join page, and then made edits. I also created a contact form with custom CSS.</p>
+              <p>2. <strong>Issue</strong>: The Home and About pages had spacing, font size, and many other issues.
+              </p>
+              <p><strong>Solution</strong>: I changed the padding, margin, font size, and changed the layout until the client was happy. I then applied those styles to every other section and page throughout the site. The previous designer used pixels for everything &mdash; I replaced <code>px</code> with <code>em</code> and <code>rem</code>.</p>
+              <p>3. <strong>Issue</strong>: The sticky header was unreadable after opacity was reduced on scroll.</p>
+              <p><strong>Solution</strong>: I deleted the header and built a simpler header that was not sticky. There already was a back-to-top button so a sticky header was not needed.</p>
+              <p>4. <strong>Issue</strong>: The testimonials slider had the text obstructed by the ornamental <em>&ldquo;</em> on small screens.</p>
+              <p><strong>Solution</strong>: Elementor had different slider options so I switched to another design that did not have any issues.</p>
+            </div>
+            <div class="client-col">
+              <p>5. <strong>Issue</strong>: The images on the pages needed to either be changed or minimized. The image sizes were in the Megabyte range.</li>
+              <p><strong>Solution</strong>: I downloaded every image and reduced the filesize using Photoshop then uploaded the smaller files and used them on the pages.</p>
+              <p>6. <strong>Issue</strong>: There were many plugins that were installed in support of Elementor.</p>
+              <p><strong>Solution</strong>: I migrated the site onto my local machine and then systematically disabled every plugin to see if there was any loss of functionality or styling. I removed all the plugins that were not needed.</p>
+              <p>7. <strong>Issue</strong>: No favicon.</li>
+              <p><strong>Solution</strong>: Luckily the client hired a graphic designer who did a great job and had a version of her logo with just the <em>UP</em> and up arrow (see website). I resized that and used it for the favicon.</p>
+              <p>8. <strong>Issue</strong>: The client&apos;s lack of knowledge of WordPress and Elementor.</li>
+              <p><strong>Solution</strong>: We did a number of Slack Huddles where I shared my screen and explained how to work with Elementor.</p>
+            </div>
+          </div>
+
+          <!-- Client section 3 -->
+          <h3 class="client-heading">#3 Two Average Gamers</h3>
+          <div class="client-row row-reverse">
+            <div class="client-col">
+              <a class="client-link link-image" href="https://twoaveragegamers.com/" target="_blank"><img src="./images/2ag.jpg"
+                  alt="" class="client-img"></a>
+            </div>
+            <div class="client-col">
+              <p>This was another non-paid volunteer job that I found on a job board named Flexjobs for <a href="https://twoaveragegamers.com/" target="_blank">Two Average Gamers</a>. My job was to improve the page speed and to look at the overall design and page structure. I was not able to do much for the design but I did address the other 2 issues.</p>
+              <p>The Google Insights Performance score was in the mid to low 40% range. I was able to get it up to 71% but Mailchimp was loading the entire jQuery library. There is only so much a free caching plugin can do.</p>
+              <p>I also alerted the site owners to the fact that they had multiple Contact, About, and other duplicate pages. They were unaware of this. I created the code for 301 redirects and I told them how to add it to their cPanel <var>.htaccess</var> file.</p>
+            </div>
+            
+          </div>
+
+          <!-- Client section 4 -->
+          <h3 class="client-heading">#4 Lift Master</h3>
+          <div class="client-row">
+            <div class="client-col">
+              <a class="client-link link-image" href="https://www.liftmaster.com/" target="_blank"><img src="./images/liftmaster.jpg" alt=""
+                  class="client-img"></a>
+            </div>
+            <div class="client-col">
+              <p>This was another Fiverr gig for someone from <a href="https://www.liftmaster.com/" target="_blank">Lift Master</a>, or at least I think that was the website based on the docs I was provided. I had to convert 7 tables in a PDF file to HTML elements.</p>
+              <p>I did create an excellent <a href="https://codepen.io/jim-kernicky/pen/gOjyWeJ" target="_blank">responsive table design</a> but this job only required using a number of <code>rowspan</code> and <code>colspan</code> attributes.</p>
+              <p>I copied the text from the PDF files and pasted it into a markdown file. Then I created the <code>table</code> element with empty <code>thead</code>, <code>td</code>, <code>tr</code>, <code>th</code>, and <code>tbody</code> tags. Then it was just a cut/paste process making sure that my table matched the PDF files exactly.</p>
+            </div>
+          </div>
+
+          <!-- Client section 4 -->
+          <!-- <h3 class="client-heading">#5 ???</h3>
+          <div class="client-row">
+            <div class="client-col">
+              <a class="client-link" href="https://www.liftmaster.com/" target="_blank"><img src="./images/liftmaster.jpg" alt=""
+                  class="client-img"></a>
+            </div>
+            <div class="client-col">
+              <p>.</p>
+              <p>.</p>
+              <p>.</p>
+            </div>
+          </div>
+          <h4>Issues and the Solutions:</h4>
+          <div class="client-row">
+            <div class="client-col">
+              <p>1. <strong>Issue</strong>: .</li>
+              <p><strong>Solution</strong>: </p>
+              <p>2. <strong>Issue</strong>: .</p>
+              <p><strong>Solution</strong>: .</p>
+              <p>3. <strong>Issue</strong>: .</p>
+              <p><strong>Solution</strong>: .</p>
+              <p>4. <strong>Issue</strong>: .</p>
+              <p><strong>Solution</strong>: .</p>
+            </div>
+            <div class="client-col">
+              <p>5. <strong>Issue</strong>: .</li>
+              <p><strong>Solution</strong>: .</p>
+              <p>6. <strong>Issue</strong>: .</p>
+              <p><strong>Solution</strong>: .</p>
+              <p>7. <strong>Issue</strong>: .</li>
+              <p><strong>Solution</strong>: .</p>
+              <p>8. <strong>Issue</strong>: .</li>
+              <p><strong>Solution</strong>: .</p>
+            </div>
+          </div> -->
+          
+
+          
+        </div>
+      </section>
+      
 
       <!-- WordPress custome theme -->
       <!--  

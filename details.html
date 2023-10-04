@@ -140,6 +140,7 @@
             <div class="project-intro-div">
               <p class="project-intro-p">This app returns the name of a guitar chord, the chord intervals, the chord tendencies, whether or not it equals another chord by a different name and the scales that build the chord.</p>
               <p>You won't find a more accurate and complete guitar chord namer app! If you or someone you know plays guitar then try out the <a href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">app on my guitar website</a> or check out the <a href="https://github.com/Kernix13/guitar-chord-names" target="_blank">code on GitHub</a>.</p>
+              <p>This is a Vanilla JavaScript app that uses Bootstrap for most of the styles and custom CSS for other elements like the card background gradients.</p>
             </div>
           </div>
           <div class="section-row">
@@ -149,7 +150,7 @@
             </div>
             <div class="section-div">
               <h3>How I built this app</h3>
-              <p>There were a number of steps I needed to do like get the get the notes values for the user fret #'s, convert them to either sharp or flat notes, strip out duplicate notes, and use the <code>every()</code> method to return the chord name if valid.</p>
+              <p>There were a number of steps I needed to do like get the get the notes values for the user fret #'s, convert them to sharp or flat notes, strip out duplicates, use the <code>every()</code> method to return the chord name(s) if valid, and much more.</p>
             </div>
           </div>
           <figure class="project-figure">
@@ -160,12 +161,12 @@
             <div class="section-div">
               <h3>What did I learn?</h3>
               <p>It was a challenge building the majority of the functionality inside a single function that is called from the form event listener.</p>
-              <p>Also. the use of the JS <code>every</code> method was the main "helper" method for getting the functionality I needed.</p>
+              <p>Also. the use of the JavaScript <code>every</code> method was the method I needed for the chord name and other information. It's my favorite method now!</p>
             </div>
             <div class="section-div">
               <h3>Is the app complete?</h3>
               <p>This app is complete for its purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins.</p>
-              <p>I also intend to load the users' tuning and sharp/flat selection into local storage.</p>
+              <p>I also intend to load the users&apos; tuning and sharp/flat selections into local storage, and finally create an SVG chord shape based on the users&apos; notes.</p>
             </div>
           </div>
         </div>

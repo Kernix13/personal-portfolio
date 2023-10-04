@@ -81,12 +81,12 @@
               alt="Screenshot of the of the alphabet buttons, Proper Nouns accordian and textarea"
               class="project-image-primary image-xsmall" />
             <div class="project-intro-div">
-              <p class="project-intro-p">I built this app for people suffering from reduced fine motor skills and difficulty in
+              <p class="project-intro-p">I built this app for people who have reduced fine motor skills and difficulty in
                 speaking (e.g., brain injuries, cerebral palsy, stroke survivors). My hope is that it will be easier for them to
                 compose emails to family, friends, and former co-workers.</p>
               <p>Take a look at the <a href="https://github.com/Kernix13/typescript-virtual-keyboard" target="_blank">code on
                   GitHub</a> or try out the <a href="https://eloquent-pie-e9cd08.netlify.app/" target="_blank">live version</a>. There
-                are some modifications that can be tailored for each person so feel free to contact me for help with that.</p>
+                are modifications that can be made to tailor the app for each person. Feel free to contact me for help with that.</p>
               <p>As for the code, this was originally a Vanilla JS app but I converted it to TypeScript. I plan to add
                 Tailwind CSS, add a language select list defaulted to <code>en-us</code>, and populate the DOM based on the language selected.</p>
             </div>
@@ -200,21 +200,22 @@
                 survival. It calculates the height of the rope(s) used to raise your tarp for 33 different tarp
                 configurations.</p>
               <p>It also notes whether the user is able to 1) sit under the tarp, and 2) sit in a <em>chair</em> under the tarp.</p>
-              <p>You can try out the app on <a href="https://timely-longma-59205e.netlify.app/" target="_blank">Netlify</a> or
+              <p>This app uses React for the state of the user's input values which are used for the calculations, and Tailwind for the styling. You can try out the app on <a href="https://timely-longma-59205e.netlify.app/" target="_blank">Netlify</a> or
                 take a look at the <a href="https://github.com/Kernix13/tarp-configs" target="_blank">code on GitHub</a>.</p>
             </div>
           </div>
           <div class="section-row">
             <div class="section-div">
               <h3>Why I built this app?</h3>
-              <p>I wanted to do something unique so I converted my spreadsheet equations for tarp configuration into a
-                React application.</p>
-              <p>This app would be useful for campers, backpackers, and bushcrafters.</p>
+              <p>Bushcraft is a hobby of mine and one aspect of it is using and setting up tarps. Each tarp setup/config requires different heights and angles for the setup. So I felt this would make a great personal project.</p>
+              <!-- <p>I wanted to do something unique so I converted my spreadsheet equations for tarp configuration into a
+                React application.</p> -->
+              <p>This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into the air for protection against the elements.</p>
             </div>
             <div class="section-div">
               <h3>Challenges encountered</h3>
-              <p>I had to do some research for building a Hamburger menu in React and to handle PNG files not outputting due to their small size and the default Webpack settings.</p>
-              <p>I also had to design all the tarp graphics in Inkscape and to display half of them as 3D to the best of my ability.</p>
+              <p>I had to build my first responsive Hamburger menu in React, and since I did not use <code>create-react-app</code> I had issues loading my images. I did some research for the image issue and learned I needed to import the images into my files since I wasn't using Webpack.</p>
+              <p>Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p>
             </div>
           </div>
           <figure class="project-figure">
@@ -230,7 +231,7 @@
             </div>
             <div class="section-div">
               <h3>Final thoughts</h3>
-              <p>Using <code>useContext</code> was better than <code>useState</code> but I would like to incorporate useReducer for my state values. I
+              <p>Using <code>useContext</code> was better than <code>useState</code> but I would like to incorporate <code>useReducer</code> for my state values. I
                 would also prefer to create my own <var>webpack.config</var> file for greater control.</p>
             </div>
           </div>

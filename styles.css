@@ -979,6 +979,7 @@ div > .profile-pic {
 
   .client-col p:first-child {
     margin-top: 0;
+    padding-top: 0;
   }
 
   .project-intro-p {

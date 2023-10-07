@@ -91,14 +91,18 @@
                 Tailwind CSS, add a language select list defaulted to <code>en-us</code>, and populate the DOM based on the language selected.</p>
             </div>
           </div>
+          <h3 class="build-title">How I built this app</h3>
           <div class="section-row">
             <div class="section-div">
-              <h3>Why I built this app</h3>
-              <p>This was my first JavaScript project and I built it for my aunt who had cerebral palsy. Her emails were in ALL CAPS with many misspellings. She has since passed away but it would be great if someone else with a similiar disability could find value with this tool.</p>
+              <h4 class="build-desc">WORDS & PHRASES</h4>
+              <p>Instead of having to type every character, I use RegEx to create arrays for 1) common words by letter, and
+              2) common phrases (in content.js). I then map thru those arrays and output the words into a menu for each letter of the
+              alphabet letter, and an accordian for the phrases.</p>
             </div>
             <div class="section-div">
-              <h3>How I built this app</h3>
-              <p>I created this project before I completed freeCodeCamp's JavaScript certification so I relied heavily on <code>for</code> loops. A few months later I refactored it by converting the <code>for</code> loops to high-order array methods. I then converted it to TypeScript after taking a TS course.</p>
+              <h4 class="build-desc">KEYBOARD</h4>
+              <p>I have functions for alphanumeric characters, navigation, and non-print keys (Spacebar, Enter, Tab). I also have
+              functionality for Caps and Shift keys for changing the characters added to the textarea based on the state of those keys.</p>
             </div>
           </div>
           <figure class="project-figure">
@@ -109,14 +113,36 @@
           </figure>
           <div class="section-row">
             <div class="section-div">
-              <h3>What did I learn?</h3>
-              <p>It is absolutely essential to have a clear plan outlined of what you need to accomplish, and I learned that
-                the hard way. This was my first project and the details were not clear in my mind.</p>
+              <h4 class="build-desc">TEXTAREA</h4>
+              <p>All words, phrases, and keyboard characters get added to the textarea on click. Further manipulation of the text in the
+              textarea is accomplished using the Delete and Backspace keys, which can be used with the Navigation keys (Home, End,
+              Arrow-Left, Arrow-Right).</p>
             </div>
+            <div class="section-div">
+              <h4 class="build-desc">CLIPBOARD & MODAL</h4>
+              <p>There is also a button to copy the textarea content to be pasted into a document or email program. Finally, there is a
+              Clear button to empty the textarea with a modal for confirmation to prevent accidental deletion.</p>
+            </div>
+          </div>
+          <figure class="project-figure">
+            <img src="./images/textarea-modal.png"
+              alt="Modal confirmation for clearing the textarea"
+              class="project-image image-small" />
+            <figcaption>Modal for clearing the text box</figcaption>
+          </figure>
+          
+          <div class="section-row">
+            
             <div class="section-div">
               <h3>Is the app complete?</h3>
               <p>No. I would like to use the File API so that users can upload a file of proper nouns and sample text so that they can
                 have a custom-built page. I would also like to create keyboards for other languages.</p>
+            </div>
+            <div class="section-div">
+              <h3>Final thoughts</h3>
+              <p>It is essential to have a clear plan of what you want to accomplish. As I built the app, I added feature
+                after feature which required changes to the CSS and HTML. Planning out the full-featured app
+                would have been better.</p>
             </div>
           </div>
         </div>
@@ -140,33 +166,67 @@
             <div class="project-intro-div">
               <p class="project-intro-p">This app returns the name of a guitar chord, the chord intervals, the chord tendencies, whether or not it equals another chord by a different name and the scales that build the chord.</p>
               <p>You won't find a more accurate and complete guitar chord namer app! If you or someone you know plays guitar then try out the <a href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">app on my guitar website</a> or check out the <a href="https://github.com/Kernix13/guitar-chord-names" target="_blank">code on GitHub</a>.</p>
+              <p>I started this project after viewing SVG Guitar Chord repos on GitHub and noticed that their names were often wrong.</p>
               <p>This is a Vanilla JavaScript app that uses Bootstrap for most of the styles and custom CSS for other elements like the card background gradients.</p>
             </div>
           </div>
+
+          <h3 class="build-title">How I built this app</h3>
           <div class="section-row">
             <div class="section-div">
-              <h3>Why did you build this app?</h3>
-              <p>I started this project after viewing SVG Guitar Chord repos on GitHub and noticed that their names were often wrong. I also was not able to find any quality websites on the subject.</p>
+              <h4 class="build-desc">Overview</h4>
+              <p>The user has to enter the fret numbers for the chord they need to be named. They also have options to choose one of thirteen tunings (Standard default), and to choose a sharp or flat key (sharp default). The tuning chosen populates the DOM with the notes for each string and the notes are used to build string arrays.</p>
             </div>
             <div class="section-div">
-              <h3>How I built this app</h3>
-              <p>There were a number of steps I needed to do like get the get the notes values for the user fret #'s, convert them to sharp or flat notes, strip out duplicates, use the <code>every()</code> method to return the chord name(s) if valid, and much more.</p>
+              <h4 class="build-desc">Building arrays and objects</h4>
+              <p>Based on the tuning and the sharp/flat checkbox, all 6 strings are built with the correct notes. Duplicate user notes are then filtered out, intervals are created with each unique note as a chord root. The intervals are converted
+              into an object and that object is used to find a match in <code>chord-intervals.js</code>.</p>
             </div>
           </div>
+
           <figure class="project-figure">
-            <img src="./images/guitar-results.png" alt="Example of a chord output. The example shows an E7 flat five sharp nine chord" class="project-image image-small" />
-            <figcaption>Output shown for a valid chord</figcaption>
+            <img src="./images/tuning-select.png"
+              alt="Tunings select list options"
+              class="project-image image-small project-image-primary" />
+            <figcaption>Option to choose different tunings</figcaption>
           </figure>
+
           <div class="section-row">
             <div class="section-div">
-              <h3>What did I learn?</h3>
-              <p>It was a challenge building the majority of the functionality inside a single function that is called from the form event listener.</p>
-              <p>Also. the use of the JavaScript <code>every</code> method was the method I needed for the chord name and other information. It's my favorite method now!</p>
+              <h4 class="build-desc">Special cases</h4>
+              <p>If at least one matching chord was found with the same number of notes, I perform 7 conditionals for what in music is
+              known as <em>enharmonic equivalents</em>. The conditionals are not complex, but without these checks, the output field "Chord
+              notes" would sometimes have the wrong notes.</p>
             </div>
             <div class="section-div">
+              <h4 class="build-desc">Finishing touches</h4>
+              <p>I have a number of small code blocks to put the Chord Notes in "proper" order, create a slash chord or not, and check to
+              see if the notes are equal to 2 or more chord names. Then I get the chord tendency and chord intervals values from
+              <code>chord-intervals.js</code> and finally write everything to the DOM.</p>
+            </div>
+          </div>
+
+          <figure class="project-figure">
+            <img src="./images/guitar-results.png"
+              alt="Example of a chord output. The example shows an E7 flat five sharp nine chord"
+              class="project-image image-small" />
+            <figcaption>Output shown for a valid chord</figcaption>
+          </figure>
+
+          <div class="section-row">
+            
+            <div class="section-div">
               <h3>Is the app complete?</h3>
-              <p>This app is complete for its purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins.</p>
-              <p>I also intend to load the users&apos; tuning and sharp/flat selections into local storage, and finally create an SVG chord shape based on the users&apos; notes.</p>
+              <p>This app is complete for its purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins. I also intend to load the users&apos; tuning and sharp/flat selections into local storage, and finally create an SVG
+              chord shape based on the users&apos; notes.</p>
+            </div>
+            <div class="section-div">
+              <h3>Final thoughts</h3>
+              <p>A lot of the description above references music theory, so I apologize for that. But music theory had to be incorporated to make this app do what it does, and to handle all the edge cases to return the correnct chord name.</p>
+              <!-- <p>It was a challenge building the majority of the functionality inside a single function that is called from the form
+                event listener.</p>
+              <p>Also. the use of the JavaScript <code>every</code> method was the method I needed for the chord name and other
+                information. It's my favorite method now!</p> -->
             </div>
           </div>
         </div>
@@ -207,15 +267,16 @@
           <div class="section-row">
             <div class="section-div">
               <h3>Why I built this app?</h3>
-              <p>Bushcraft is a hobby of mine and one aspect of it is using and setting up tarps. Each tarp setup/config requires different heights and angles for the setup. So I felt this would make a great personal project.</p>
+              <p>Bushcraft is a hobby of mine and one aspect of it is using and setting up tarps. Each tarp setup/config requires different heights and angles for the setup. So I felt this would make a great personal project. This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into
+              the air for protection against the elements.</p>
               <!-- <p>I wanted to do something unique so I converted my spreadsheet equations for tarp configuration into a
                 React application.</p> -->
-              <p>This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into the air for protection against the elements.</p>
+              <!-- <p>This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into the air for protection against the elements.</p> -->
             </div>
             <div class="section-div">
               <h3>Challenges encountered</h3>
-              <p>I had to build my first responsive Hamburger menu in React, and since I did not use <code>create-react-app</code> I had issues loading my images. I did some research for the image issue and learned I needed to import the images into my files since I wasn't using Webpack.</p>
-              <p>Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p>
+              <p>I had to build my first responsive Hamburger menu and back-to-top button in React, and since I did not use <code>create-react-app</code> I had issues loading my images. I did some research for the image issue and found that without Webpack I needed to import the images into my files. Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p>
+              <!-- <p>Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p> -->
             </div>
           </div>
           <figure class="project-figure">
@@ -225,9 +286,8 @@
           </figure>
           <div class="section-row">
             <div class="section-div">
-              <h3>What did I learn?</h3>
-              <p>The ease of Tailwind and the basics of React such as react-router-dom, use hooks (<code>useState</code>, <code>useContext</code>,
-                <code>useEffect</code>, <code>useRef</code>, <code>useNavigate</code>, and <code>useLocation</code>), and conditional JSX.</p>
+              <h3>Is the app complete?</h3>
+              <p>Almost. The app does what it is supposed but I would like to add some options for the users. The first would be to let the user enter the tarp size in inches or feet. I would also like to have an option to set all the fields to metric that accept centimeter/meter values.</p>
             </div>
             <div class="section-div">
               <h3>Final thoughts</h3>

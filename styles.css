@@ -400,6 +400,10 @@ footer {
   margin: 1em 0 0;
 }
 
+.section-div {
+  width: 100%;
+}
+
 .project-figure img {
   flex-shrink: 0;
 }
@@ -417,8 +421,11 @@ figcaption {
 }
 
 .detail-container h4 {
-  margin-bottom: 0;
   font-size: 1.25rem;
+}
+
+h4.build-desc {
+  font-size: 1.125rem;
 }
 /* ===== end Details page ===== */
 
@@ -953,6 +960,11 @@ div > .profile-pic {
     width: 100%;
     height: auto;
   }
+
+  .detail-container h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -987,8 +999,8 @@ div > .profile-pic {
     margin: 0;
   }
 
-  .clients {
-    margin-bottom: 6em;
+  h4.build-desc {
+    padding-bottom: 1em;
   }
 }
 
@@ -1098,6 +1110,10 @@ div > .profile-pic {
   .hero-text p {
     font-size: 1rem;
     margin-right: 0;
+  }
+
+  h4.build-desc {
+    margin-top: 0;
   }
   
 }

@@ -176,11 +176,11 @@
           <h3 class="build-title">How I built this app</h3>
           <div class="section-row">
             <div class="section-div">
-              <h4 class="build-desc">Overview</h4>
+              <h4 class="build-desc">OVERVIEW</h4>
               <p>The user has to enter the fret numbers for the chord they need to be named. They also have options to choose one of thirteen tunings (Standard default), and to choose a sharp or flat key (sharp default). The tuning chosen populates the DOM with the notes for each string and the notes are used to build string arrays.</p>
             </div>
             <div class="section-div">
-              <h4 class="build-desc">Building arrays and objects</h4>
+              <h4 class="build-desc">BUILDING ARRAYS AND OBJECTS</h4>
               <p>Based on the tuning and the sharp/flat checkbox, all 6 strings are built with the correct notes. Duplicate user notes are then filtered out, intervals are created with each unique note as a chord root. The intervals are converted
               into an object and that object is used to find a match in <code>chord-intervals.js</code>.</p>
             </div>
@@ -195,13 +195,13 @@
 
           <div class="section-row">
             <div class="section-div">
-              <h4 class="build-desc">Special cases</h4>
+              <h4 class="build-desc">SPECIAL CASES</h4>
               <p>If at least one matching chord was found with the same number of notes, I perform 7 conditionals for what in music is
               known as <em>enharmonic equivalents</em>. The conditionals are not complex, but without these checks, the output field "Chord
               notes" would sometimes have the wrong notes.</p>
             </div>
             <div class="section-div">
-              <h4 class="build-desc">Finishing touches</h4>
+              <h4 class="build-desc">FINISHING TOUCHES</h4>
               <p>I have a number of small code blocks to put the Chord Notes in "proper" order, create a slash chord or not, and check to
               see if the notes are equal to 2 or more chord names. Then I get the chord tendency and chord intervals values from
               <code>chord-intervals.js</code> and finally write everything to the DOM.</p>
@@ -225,10 +225,6 @@
             <div class="section-div">
               <h3>Final thoughts</h3>
               <p>A lot of the description above references music theory, so I apologize for that. But music theory had to be incorporated to make this app do what it does, and to handle all the edge cases to return the correnct chord name.</p>
-              <!-- <p>It was a challenge building the majority of the functionality inside a single function that is called from the form
-                event listener.</p>
-              <p>Also. the use of the JavaScript <code>every</code> method was the method I needed for the chord name and other
-                information. It's my favorite method now!</p> -->
             </div>
           </div>
         </div>
@@ -271,9 +267,6 @@
               <h3>Why I built this app?</h3>
               <p>Bushcraft is a hobby of mine and one aspect of it is using and setting up tarps. Each tarp setup/config requires different heights and angles for the setup. So I felt this would make a great personal project. This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into
               the air for protection against the elements.</p>
-              <!-- <p>I wanted to do something unique so I converted my spreadsheet equations for tarp configuration into a
-                React application.</p> -->
-              <!-- <p>This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into the air for protection against the elements.</p> -->
             </div>
             <div class="section-div">
               <h3>Challenges encountered</h3>

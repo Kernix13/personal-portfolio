@@ -2,11 +2,9 @@
 
 ![portfolio-thumbnail](/portfolio-thumbnail.PNG)
 
-The files and folders used to build [my portfolio page](https://courageous-cuchufli-816711.netlify.app/).
+> ## The files and assets used to build [my portfolio page](https://courageous-cuchufli-816711.netlify.app/) which is deployed on Netlify.
 
-> _This is not a repo that I believe anyone would be interested in because it does not have any impressive CSS or JS. But for what it is worth I have some notes on the main files_.
-
-## Notes
+<!-- ## Notes
 
 I have changed the _projects_ section more than any other part of the page. I also added `details.html` to go into more detail for each project. I have also changed the details page many times so this portfolio keeps evolving.
 
@@ -22,4 +20,4 @@ style.css:
 script.js:
 
 - I have a link commented out in my `script.js` file where I got tips on the accessibility for a hamburger icon
-- Although the accessibility of the mobile menu is great, I do not like the lack of animation or the content shift when the menu is opened and closed
+- Although the accessibility of the mobile menu is great, I do not like the lack of animation or the content shift when the menu is opened and closed -->

@@ -2,7 +2,9 @@
 
 ![portfolio-thumbnail](/portfolio-thumbnail.PNG)
 
-> ## The files and assets used to build [my portfolio page](https://courageous-cuchufli-816711.netlify.app/) which is deployed on Netlify.
+<br>
+
+The files and assets used to build [my portfolio page](https://courageous-cuchufli-816711.netlify.app/) which is deployed on Netlify.
 
 <!-- ## Notes
 

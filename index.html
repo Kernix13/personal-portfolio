@@ -23,8 +23,9 @@
   <meta name="twitter:domain" content="https://courageous-cuchufli-816711.netlify.app/">
 
   <!-- Favicon, Font Awesome and Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" href="./images/favicon.png">
   <link rel="stylesheet" href="./styles.css" />
 
@@ -34,20 +35,22 @@
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header aria-label="top navigation bar">
     <div class="container">
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" tabindex="0" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-      <div class="row">
+      <nav class="nav-bar" aria-label="Main navigation">
         <span id="portfolio-home" class="logo">j.k.</span>
-        <nav id="nav" class="nav" aria-label="Main navigation">
-          <ul class="nav__list nav__list--primary">
-            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+
+        <ul class="nav-menu nav__list--primary">
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button id="hamburger" class="hamburger" aria-label="open navigation" tabindex="0" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
     </div>
   </header>
 
@@ -383,6 +386,8 @@
       </div>
       <p class="copyright" aria-label="copyright">&copy; 2021 James Kernicky</p>
     </div>
+
+    <button id="back-to-top-btn"><i class="fa-solid fa-angle-up"></i></button>
   </footer>
 
   <script src="./script.js"></script>

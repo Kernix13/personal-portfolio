@@ -1,484 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary Meta Tags -->
-    <title>James Kernicky Project Details</title>
-    <meta name="title" content="Portfolio Details | James Kernicky">
-    <meta name="description" content="Detailed information on each portfolio item by James Kernicky">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://courageous-cuchufli-816711.netlify.app/">
+  <!-- Primary Meta Tags -->
+  <title>James Kernicky Project Details</title>
+  <meta name="title" content="Portfolio Details | James Kernicky">
+  <meta name="description" content="Detailed information on each portfolio item by James Kernicky">
 
-    <!-- Open Graph, need og:image -->
-    <meta property="og:site_name" content="James Kernicky">
-    <meta property="og:title" content="Portfolio Details | James Kernicky">
-    <meta property="og:description" content="Front-End Developer | Web Designer | Writer">
-    <meta property="og:url" content="https://courageous-cuchufli-816711.netlify.app/">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://courageous-cuchufli-816711.netlify.app/">
 
-    <!-- Twitter, need twitter:card & twitter:image -->
-    <meta name="twitter:title" content="Portfolio Details | James Kernicky">
-    <meta name="twitter:description" content="Front-End Developer | Web Designer | Writer">
-    <meta name="twitter:domain" content="https://courageous-cuchufli-816711.netlify.app/">
+  <!-- Open Graph, need og:image -->
+  <meta property="og:site_name" content="James Kernicky">
+  <meta property="og:title" content="Portfolio Details | James Kernicky">
+  <meta property="og:description" content="Front-End Developer | Web Designer | Writer">
+  <meta property="og:url" content="https://courageous-cuchufli-816711.netlify.app/">
 
-    <!-- Favicon, Font Awesome and Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="stylesheet" href="./styles.css" />
+  <!-- Twitter, need twitter:card & twitter:image -->
+  <meta name="twitter:title" content="Portfolio Details | James Kernicky">
+  <meta name="twitter:description" content="Front-End Developer | Web Designer | Writer">
+  <meta name="twitter:domain" content="https://courageous-cuchufli-816711.netlify.app/">
 
-  </head>
+  <!-- Favicon, Font Awesome and Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="./styles.css" />
 
-  <body>
-    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-    <header aria-label="top navigation bar">
-      <div class="container">
-        <button id="nav-toggle" class="nav-toggle" aria-label="open navigation" tabindex="0" aria-expanded="false">
-          <span class="hamburger"></span>
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+  <header aria-label="top navigation bar">
+    <div class="container">
+      <nav class="nav-bar" aria-label="Main navigation">
+        <a href="./index.html" class="logo details-home">j.k.</a>
+
+        <ul class="nav-menu nav__list--primary">
+          <li class="nav-item"><a href="#writer" class="nav-link">Writer App</a></li>
+          <li class="nav-item"><a href="#guitar" class="nav-link">Guitar App</a></li>
+          <li class="nav-item"><a href="#tarps" class="nav-link">Tarp App</a></li>
+          <li class="nav-item"><a href="#clients" class="nav-link">Clients</a></li>
+        </ul>
+
+        <button id="hamburger" class="hamburger" aria-label="open navigation" tabindex="0" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </button>
-        <div class="row">
-          <a href="./index.html" class="logo details-home">j.k.</a>
+      </nav>
+    </div>
+  </header>
 
-          <nav id="nav" class="nav" aria-label="Main navigation">
-            <ul class="nav__list nav__list--primary">
-              <li class="nav__item"><a href="#writer" class="nav__link">Writer App</a></li>
-              <li class="nav__item"><a href="#guitar" class="nav__link">Guitar App</a></li>
-              <li class="nav__item"><a href="#tarps" class="nav__link">Tarp App</a></li>
-              <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-            </ul>
-          </nav>
+  <main id="main" aria-label="Main content">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="detail-container">
+        <h1 id="intro-title" class="intro-title">project details</h1>
+        <p>details, descriptions, and notes for my projects</p>
+      </div>
+    </section>
+
+    <!-- Writer assistant -->
+
+    <section id="writer" class="project-section" aria-label="writer">
+      <h2>Writing Assistant</h2>
+      <div class="detail-container">
+        <h3 class="tech-stack">Tech used</h3>
+        <div class="tech-images">
+          <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
+          <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="JavaScript icon" />
+          <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
+          <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
+            alt="GitHub icon" width="44" height="36" />
+          <img src="./icons/netlify24.png" width="50" height="40" alt="Netlify icon" />
+        </div>
+        <div class="section-header-row">
+          <img src="./images/writer-tool3.png"
+            alt="Screenshot of the of the alphabet buttons, Proper Nouns accordian and textarea"
+            class="project-image-primary image-xsmall" />
+          <div class="project-intro-div">
+            <p class="project-intro-p">I built this app for people who have reduced fine motor skills and difficulty in
+              speaking (e.g., brain injuries, cerebral palsy, stroke survivors). My hope is that it will be easier for
+              them to
+              compose emails to family, friends, and former co-workers.</p>
+            <p>Take a look at the <a href="https://github.com/Kernix13/typescript-virtual-keyboard" target="_blank">code
+                on
+                GitHub</a> or try out the <a href="https://eloquent-pie-e9cd08.netlify.app/" target="_blank">live
+                version</a>. There
+              are modifications that can be made to tailor the app for each person. Feel free to contact me for help
+              with that.</p>
+            <p>As for the code, this was originally a Vanilla JS app but I converted it to TypeScript. I plan to add
+              Tailwind CSS, add a language select list defaulted to <code>en-us</code>, and populate the DOM based on
+              the language selected.</p>
+          </div>
+        </div>
+        <h3 class="build-title">How I built this app</h3>
+        <div class="section-row">
+          <div class="section-div">
+            <h4 class="build-desc">WORDS & PHRASES</h4>
+            <p>Instead of having to type every character, I use RegEx to create arrays for 1) common words by letter,
+              and
+              2) common phrases (in content.js). I then map thru those arrays and output the words into a menu for each
+              letter of the
+              alphabet letter, and an accordian for the phrases.</p>
+          </div>
+          <div class="section-div">
+            <h4 class="build-desc">KEYBOARD</h4>
+            <p>I have functions for alphanumeric characters, navigation, and non-print keys (Spacebar, Enter, Tab). I
+              also have
+              functionality for Caps and Shift keys for changing the characters added to the textarea based on the state
+              of those keys.</p>
+          </div>
+        </div>
+        <figure class="project-figure">
+          <img src="./images/writer-tool2.png"
+            alt="A view of the Proper Nouns accordian open showing all the proper nouns used in this app "
+            class="project-image image-small" />
+          <figcaption>Example of drop-down list for phrases</figcaption>
+        </figure>
+        <div class="section-row">
+          <div class="section-div">
+
+            <h4 class="build-desc">TEXTAREA</h4>
+            <p>All words, phrases, and keyboard characters get added to the textarea on click. Further manipulation of
+              the text in the
+              textarea is accomplished using the Delete and Backspace keys, which can be used with the Navigation keys
+              (Home, End,
+              Arrow-Left, Arrow-Right).</p>
+          </div>
+          <div class="section-div">
+            <h4 class="build-desc">CLIPBOARD & MODAL</h4>
+            <p>There is also a button to copy the textarea content to be pasted into a document or email program.
+              Finally, there is a
+              Clear button to empty the textarea with a modal for confirmation to prevent accidental deletion.</p>
+          </div>
+        </div>
+        <figure class="project-figure">
+          <img src="./images/textarea-modal.png" alt="Modal confirmation for clearing the textarea"
+            class="project-image image-small" />
+          <figcaption>Modal for clearing the text box</figcaption>
+        </figure>
+
+        <div class="section-row">
+
+          <div class="section-div">
+            <h3>Is the app complete?</h3>
+            <p>No. I would like to use the File API so that users can upload a file of proper nouns and sample text so
+              that they can
+              have a custom-built page. I would also like to create keyboards for other languages.</p>
+          </div>
+          <div class="section-div">
+            <h3>Final thoughts</h3>
+            <p>It is essential to have a clear plan of what you want to accomplish. As I built the app, I added feature
+              after feature which required changes to the CSS and HTML. Planning out the full-featured app
+              would have been better.</p>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main id="main" aria-label="Main content">
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="detail-container">
-          <h1 id="intro-title" class="intro-title">project details</h1>
-          <p>details, descriptions, and notes for my projects</p>
-        </div>
-      </section>
+    <!-- Guitar Chords -->
 
-      <!-- Writer assistant -->
-      
-      <section id="writer" class="project-section" aria-label="writer">
-        <h2>Writing Assistant</h2>
-        <div class="detail-container">
-          <h3 class="tech-stack">Tech used</h3>
-          <div class="tech-images">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
-            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
-            <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="JavaScript icon" />
-            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
-            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
+    <section id="guitar" class="project-section" aria-label="guitar">
+      <h2>Guitar Chord Namer</h2>
+      <div class="detail-container">
+        <h3 class="tech-stack">Tech used</h3>
+        <div class="tech-images">
+          <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
+          <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+            alt="Bootstrap icon" width="48" height="48" />
+          <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
+          <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
             alt="GitHub icon" width="44" height="36" />
-            <img src="./icons/netlify24.png" width="50" height="40" alt="Netlify icon" />
-          </div>
-          <div class="section-header-row">
-            <img src="./images/writer-tool3.png"
-              alt="Screenshot of the of the alphabet buttons, Proper Nouns accordian and textarea"
-              class="project-image-primary image-xsmall" />
-            <div class="project-intro-div">
-              <p class="project-intro-p">I built this app for people who have reduced fine motor skills and difficulty in
-                speaking (e.g., brain injuries, cerebral palsy, stroke survivors). My hope is that it will be easier for them to
-                compose emails to family, friends, and former co-workers.</p>
-              <p>Take a look at the <a href="https://github.com/Kernix13/typescript-virtual-keyboard" target="_blank">code on
-                  GitHub</a> or try out the <a href="https://eloquent-pie-e9cd08.netlify.app/" target="_blank">live version</a>. There
-                are modifications that can be made to tailor the app for each person. Feel free to contact me for help with that.</p>
-              <p>As for the code, this was originally a Vanilla JS app but I converted it to TypeScript. I plan to add
-                Tailwind CSS, add a language select list defaulted to <code>en-us</code>, and populate the DOM based on the language selected.</p>
-            </div>
-          </div>
-          <h3 class="build-title">How I built this app</h3>
-          <div class="section-row">
-            <div class="section-div">
-              <h4 class="build-desc">WORDS & PHRASES</h4>
-              <p>Instead of having to type every character, I use RegEx to create arrays for 1) common words by letter, and
-              2) common phrases (in content.js). I then map thru those arrays and output the words into a menu for each letter of the
-              alphabet letter, and an accordian for the phrases.</p>
-            </div>
-            <div class="section-div">
-              <h4 class="build-desc">KEYBOARD</h4>
-              <p>I have functions for alphanumeric characters, navigation, and non-print keys (Spacebar, Enter, Tab). I also have
-              functionality for Caps and Shift keys for changing the characters added to the textarea based on the state of those keys.</p>
-            </div>
-          </div>
-          <figure class="project-figure">
-            <img src="./images/writer-tool2.png"
-              alt="A view of the Proper Nouns accordian open showing all the proper nouns used in this app "
-              class="project-image image-small" />
-            <figcaption>Example of drop-down list for phrases</figcaption>
-          </figure>
-          <div class="section-row">
-            <div class="section-div">
-
-              <h4 class="build-desc">TEXTAREA</h4>
-              <p>All words, phrases, and keyboard characters get added to the textarea on click. Further manipulation of the text in the
-              textarea is accomplished using the Delete and Backspace keys, which can be used with the Navigation keys (Home, End,
-              Arrow-Left, Arrow-Right).</p>
-            </div>
-            <div class="section-div">
-              <h4 class="build-desc">CLIPBOARD & MODAL</h4>
-              <p>There is also a button to copy the textarea content to be pasted into a document or email program. Finally, there is a
-              Clear button to empty the textarea with a modal for confirmation to prevent accidental deletion.</p>
-            </div>
-          </div>
-          <figure class="project-figure">
-            <img src="./images/textarea-modal.png"
-              alt="Modal confirmation for clearing the textarea"
-              class="project-image image-small" />
-            <figcaption>Modal for clearing the text box</figcaption>
-          </figure>
-          
-          <div class="section-row">
-            
-            <div class="section-div">
-              <h3>Is the app complete?</h3>
-              <p>No. I would like to use the File API so that users can upload a file of proper nouns and sample text so that they can
-                have a custom-built page. I would also like to create keyboards for other languages.</p>
-            </div>
-            <div class="section-div">
-              <h3>Final thoughts</h3>
-              <p>It is essential to have a clear plan of what you want to accomplish. As I built the app, I added feature
-                after feature which required changes to the CSS and HTML. Planning out the full-featured app
-                would have been better.</p>
-            </div>
+        </div>
+        <div class="section-header-row">
+          <img src="./images/what-chord.png" alt="Screenshot of the input form used to calculate the chord name"
+            class="project-image-primary" />
+          <div class="project-intro-div">
+            <p class="project-intro-p">This app returns the name of a guitar chord, the chord intervals, the chord
+              tendencies, whether or not it equals another chord by a different name and the scales that build the
+              chord.</p>
+            <p>You won't find a more accurate and complete guitar chord namer app! If you or someone you know plays
+              guitar then try out the <a href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">app
+                on my guitar website</a> or check out the <a href="https://github.com/Kernix13/guitar-chord-names"
+                target="_blank">code on GitHub</a>.</p>
+            <p>I started this project after viewing SVG Guitar Chord repos on GitHub and noticed that their names were
+              often wrong.</p>
+            <p>This is a Vanilla JavaScript app that uses Bootstrap for most of the styles and custom CSS for other
+              elements like the card background gradients.</p>
           </div>
         </div>
-      </section>
 
-      <!-- Guitar Chords -->
-
-      <section id="guitar" class="project-section" aria-label="guitar">
-        <h2>Guitar Chord Namer</h2>
-        <div class="detail-container">
-          <h3 class="tech-stack">Tech used</h3>
-          <div class="tech-images">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
-            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" />
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap icon" width="48" height="48" />
-            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
-            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png" alt="GitHub icon" width="44" height="36" />
+        <h3 class="build-title">How I built this app</h3>
+        <div class="section-row">
+          <div class="section-div">
+            <h4 class="build-desc">OVERVIEW</h4>
+            <p>The user has to enter the fret numbers for the chord they need to be named. They also have options to
+              choose one of thirteen tunings (Standard default), and to choose a sharp or flat key (sharp default). The
+              tuning chosen populates the DOM with the notes for each string and the notes are used to build string
+              arrays.</p>
           </div>
-          <div class="section-header-row">
-            <img src="./images/what-chord.png" alt="Screenshot of the input form used to calculate the chord name" class="project-image-primary" />
-            <div class="project-intro-div">
-              <p class="project-intro-p">This app returns the name of a guitar chord, the chord intervals, the chord tendencies, whether or not it equals another chord by a different name and the scales that build the chord.</p>
-              <p>You won't find a more accurate and complete guitar chord namer app! If you or someone you know plays guitar then try out the <a href="https://everyguitarchord.com/what-chord-is-this.html" target="_blank">app on my guitar website</a> or check out the <a href="https://github.com/Kernix13/guitar-chord-names" target="_blank">code on GitHub</a>.</p>
-              <p>I started this project after viewing SVG Guitar Chord repos on GitHub and noticed that their names were often wrong.</p>
-              <p>This is a Vanilla JavaScript app that uses Bootstrap for most of the styles and custom CSS for other elements like the card background gradients.</p>
-            </div>
-          </div>
-
-          <h3 class="build-title">How I built this app</h3>
-          <div class="section-row">
-            <div class="section-div">
-              <h4 class="build-desc">OVERVIEW</h4>
-              <p>The user has to enter the fret numbers for the chord they need to be named. They also have options to choose one of thirteen tunings (Standard default), and to choose a sharp or flat key (sharp default). The tuning chosen populates the DOM with the notes for each string and the notes are used to build string arrays.</p>
-            </div>
-            <div class="section-div">
-              <h4 class="build-desc">BUILDING ARRAYS AND OBJECTS</h4>
-              <p>Based on the tuning and the sharp/flat checkbox, all 6 strings are built with the correct notes. Duplicate user notes are then filtered out, intervals are created with each unique note as a chord root. The intervals are converted
+          <div class="section-div">
+            <h4 class="build-desc">BUILDING ARRAYS AND OBJECTS</h4>
+            <p>Based on the tuning and the sharp/flat checkbox, all 6 strings are built with the correct notes.
+              Duplicate user notes are then filtered out, intervals are created with each unique note as a chord root.
+              The intervals are converted
               into an object and that object is used to find a match in <code>chord-intervals.js</code>.</p>
-            </div>
           </div>
+        </div>
 
-          <figure class="project-figure">
-            <img src="./images/tuning-select.png"
-              alt="Tunings select list options"
-              class="project-image image-small project-image-primary" />
-            <figcaption>Option to choose different tunings</figcaption>
-          </figure>
+        <figure class="project-figure">
+          <img src="./images/tuning-select.png" alt="Tunings select list options"
+            class="project-image image-small project-image-primary" />
+          <figcaption>Option to choose different tunings</figcaption>
+        </figure>
 
-          <div class="section-row">
-            <div class="section-div">
-              <h4 class="build-desc">SPECIAL CASES</h4>
-              <p>If at least one matching chord was found with the same number of notes, I perform 7 conditionals for what in music is
-              known as <em>enharmonic equivalents</em>. The conditionals are not complex, but without these checks, the output field "Chord
+        <div class="section-row">
+          <div class="section-div">
+            <h4 class="build-desc">SPECIAL CASES</h4>
+            <p>If at least one matching chord was found with the same number of notes, I perform 7 conditionals for what
+              in music is
+              known as <em>enharmonic equivalents</em>. The conditionals are not complex, but without these checks, the
+              output field "Chord
               notes" would sometimes have the wrong notes.</p>
-            </div>
-            <div class="section-div">
-              <h4 class="build-desc">FINISHING TOUCHES</h4>
-              <p>I have a number of small code blocks to put the Chord Notes in "proper" order, create a slash chord or not, and check to
-              see if the notes are equal to 2 or more chord names. Then I get the chord tendency and chord intervals values from
-              <code>chord-intervals.js</code> and finally write everything to the DOM.</p>
-            </div>
           </div>
+          <div class="section-div">
+            <h4 class="build-desc">FINISHING TOUCHES</h4>
+            <p>I have a number of small code blocks to put the Chord Notes in "proper" order, create a slash chord or
+              not, and check to
+              see if the notes are equal to 2 or more chord names. Then I get the chord tendency and chord intervals
+              values from
+              <code>chord-intervals.js</code> and finally write everything to the DOM.
+            </p>
+          </div>
+        </div>
 
-          <figure class="project-figure">
-            <img src="./images/guitar-results.png"
-              alt="Example of a chord output. The example shows an E7 flat five sharp nine chord"
-              class="project-image image-small" />
-            <figcaption>Output shown for a valid chord</figcaption>
-          </figure>
+        <figure class="project-figure">
+          <img src="./images/guitar-results.png"
+            alt="Example of a chord output. The example shows an E7 flat five sharp nine chord"
+            class="project-image image-small" />
+          <figcaption>Output shown for a valid chord</figcaption>
+        </figure>
 
-          <div class="section-row">
-            
-            <div class="section-div">
-              <h3>Is the app complete?</h3>
-              <p>This app is complete for its purpose but it can be much better. I would like to have an option for ukeleles, banjos &amp; mandolins. I also intend to load the users&apos; tuning and sharp/flat selections into local storage, and finally create an SVG
+        <div class="section-row">
+
+          <div class="section-div">
+            <h3>Is the app complete?</h3>
+            <p>This app is complete for its purpose but it can be much better. I would like to have an option for
+              ukeleles, banjos &amp; mandolins. I also intend to load the users&apos; tuning and sharp/flat selections
+              into local storage, and finally create an SVG
               chord shape based on the users&apos; notes.</p>
-            </div>
-            <div class="section-div">
-              <h3>Final thoughts</h3>
-              <p>A lot of the description above references music theory, so I apologize for that. But music theory had to be incorporated to make this app do what it does, and to handle all the edge cases to return the correnct chord name.</p>
-            </div>
+          </div>
+          <div class="section-div">
+            <h3>Final thoughts</h3>
+            <p>A lot of the description above references music theory, so I apologize for that. But music theory had to
+              be incorporated to make this app do what it does, and to handle all the edge cases to return the correnct
+              chord name.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Tarp setups -->
-      <section id="tarps" class="project-section" aria-label="tarps">
-        <h2 class="section-title">Tarp Configurations</h2>
-        <div class="detail-container">
-          <h3 class="tech-stack">Tech used</h3>
-      
-          <div class="tech-images">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
-            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" />
-            <img src="https://img.icons8.com/color/40/000000/react-native.png" alt="React icon" />
-            <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind CSS icon" />
-            <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
-            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
-              alt="GitHub icon" width="44" height="36" />
-            <img src="./icons/netlify24.png" width="50" height="40" alt="Netlify icon" />
-            <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/inkscape.png"
-              alt="Inkscape icon" width="40" height="40" />
-            <!-- <img src="./images/icons8-netlify48.png" width="46" height="38" alt="Netlify icon" /> -->
+    <!-- Tarp setups -->
+    <section id="tarps" class="project-section" aria-label="tarps">
+      <h2 class="section-title">Tarp Configurations</h2>
+      <div class="detail-container">
+        <h3 class="tech-stack">Tech used</h3>
+
+        <div class="tech-images">
+          <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
+          <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript icon" />
+          <img src="https://img.icons8.com/color/40/000000/react-native.png" alt="React icon" />
+          <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind CSS icon" />
+          <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
+          <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/github.png"
+            alt="GitHub icon" width="44" height="36" />
+          <img src="./icons/netlify24.png" width="50" height="40" alt="Netlify icon" />
+          <img src="https://raw.githubusercontent.com/izumin5210/emojipack-for-devicon/master/png/inkscape.png"
+            alt="Inkscape icon" width="40" height="40" />
+          <!-- <img src="./images/icons8-netlify48.png" width="46" height="38" alt="Netlify icon" /> -->
+        </div>
+        <div class="section-header-row">
+          <img src="./images/tarp-form.png" alt="Home page form screenshot" class="project-image-primary" />
+
+          <div class="project-intro-div">
+            <p class="project-intro-p">This is a personal project that aligns with my interests in bushcraft and
+              wilderness
+              survival. It calculates the height of the rope(s) used to raise your tarp for 33 different tarp
+              configurations.</p>
+            <p>It also notes whether the user is able to 1) sit under the tarp, and 2) sit in a <em>chair</em> under the
+              tarp.</p>
+            <p>This app uses React for the state of the user's input values which are used for the calculations, and
+              Tailwind for the styling. You can try out the app on <a href="https://timely-longma-59205e.netlify.app/"
+                target="_blank">Netlify</a> or
+              take a look at the <a href="https://github.com/Kernix13/tarp-configs" target="_blank">code on GitHub</a>.
+            </p>
           </div>
-          <div class="section-header-row">
-            <img src="./images/tarp-form.png" alt="Home page form screenshot" class="project-image-primary" />
-      
-            <div class="project-intro-div">
-              <p class="project-intro-p">This is a personal project that aligns with my interests in bushcraft and wilderness
-                survival. It calculates the height of the rope(s) used to raise your tarp for 33 different tarp
-                configurations.</p>
-              <p>It also notes whether the user is able to 1) sit under the tarp, and 2) sit in a <em>chair</em> under the tarp.</p>
-              <p>This app uses React for the state of the user's input values which are used for the calculations, and Tailwind for the styling. You can try out the app on <a href="https://timely-longma-59205e.netlify.app/" target="_blank">Netlify</a> or
-                take a look at the <a href="https://github.com/Kernix13/tarp-configs" target="_blank">code on GitHub</a>.</p>
-            </div>
-          </div>
-          <div class="section-row">
-            <div class="section-div">
-              <h3>Why I built this app?</h3>
-              <p>Bushcraft is a hobby of mine and one aspect of it is using and setting up tarps. Each tarp setup/config requires different heights and angles for the setup. So I felt this would make a great personal project. This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to raise a tarp into
+        </div>
+        <div class="section-row">
+          <div class="section-div">
+            <h3>Why I built this app?</h3>
+            <p>Bushcraft is a hobby of mine and one aspect of it is using and setting up tarps. Each tarp setup/config
+              requires different heights and angles for the setup. So I felt this would make a great personal project.
+              This app would be useful for campers, backpackers, bushcrafters, or anyone who has struggled trying to
+              raise a tarp into
               the air for protection against the elements.</p>
-            </div>
-            <div class="section-div">
-              <h3>Challenges encountered</h3>
-              <p>I had to build my first responsive Hamburger menu and back-to-top button in React, and since I did not use <code>create-react-app</code> I had issues loading my images. I did some research for the image issue and found that without Webpack I needed to import the images into my files. Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p>
-              <!-- <p>Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p> -->
-            </div>
           </div>
-          <figure class="project-figure">
-            <img src="./images/tarp-result.png" alt="Screenshot of an example tarp configurations result"
-              class="project-image image-small" />
-            <figcaption>Example of results output</figcaption>
-          </figure>
-          <div class="section-row">
-            <div class="section-div">
-              <h3>Is the app complete?</h3>
-              <p>Almost. The app does what it is supposed but I would like to add some options for the users. The first would be to let the user enter the tarp size in inches or feet. I would also like to have an option to set all the fields to metric that accept centimeter/meter values.</p>
-            </div>
-            <div class="section-div">
-              <h3>Final thoughts</h3>
-              <p>Using <code>useContext</code> was better than <code>useState</code> but I would like to incorporate <code>useReducer</code> for my state values. I
-                would also prefer to create my own <var>webpack.config</var> file for greater control.</p>
-            </div>
+          <div class="section-div">
+            <h3>Challenges encountered</h3>
+            <p>I had to build my first responsive Hamburger menu and back-to-top button in React, and since I did not
+              use <code>create-react-app</code> I had issues loading my images. I did some research for the image issue
+              and found that without Webpack I needed to import the images into my files. Lastly, I had to design the
+              tarp graphics in Inkscape, as close to 3D as my skills allowed.</p>
+            <!-- <p>Lastly, I had to design the tarp graphics in Inkscape, as close to 3D as my skills allowed.</p> -->
           </div>
-          <figure class="project-figure">
-            <img src="./images/tarp-config.png" alt="Example of tip points for stakes and the ridgeline"
-              class="project-image image-small" />
-            <figcaption>Example of tarp fold(s) and tie points</figcaption>
-          </figure>
         </div>
-      </section>
-
-      <!-- WordPress Clients -->
-      <section id="clients" class="project-section clients" aria-label="wordpress">
-        <h2>Client Work</h2>
-        <div class="detail-container">
-          <h3 class="tech-stack">Tech used</h3>
-          <div class="tech-images">
-            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
-            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
-            <img height="48" src="https://user-images.githubusercontent.com/25181517/183345419-fe3e8e5a-9bbb-4c34-9121-463721cd9bfe.jpg" alt="WordPress icon" title="Wordpress" />
-            <img src="./icons/elementor-48.png" width="48" alt="Elementor icon" />
-            <img src="./icons/cpanel-svgrepo-com.svg" width="72" alt="cpanel icon">
-            <img src="https://img.icons8.com/color/54/000000/cloudflare.png" alt="Cloudflare icon" title="Cloudflare" />
+        <figure class="project-figure">
+          <img src="./images/tarp-result.png" alt="Screenshot of an example tarp configurations result"
+            class="project-image image-small" />
+          <figcaption>Example of results output</figcaption>
+        </figure>
+        <div class="section-row">
+          <div class="section-div">
+            <h3>Is the app complete?</h3>
+            <p>Almost. The app does what it is supposed but I would like to add some options for the users. The first
+              would be to let the user enter the tarp size in inches or feet. I would also like to have an option to set
+              all the fields to metric that accept centimeter/meter values.</p>
           </div>
-          <div class="section-header-row">
-            <img src="./images/computer-550.jpg" alt="computer at desk" class="project-image-primary image-xsmall" />
-            <div class="project-intro-div">
-              <p class="project-intro-p">The details below are not what I would call <em>projects</em>, but are rather the steps I took to help different website owners.</p>
-              <p>I have done unpaid volunteer work for two WordPress site owners. Another client is from Fiverr who was unfamiliar with how WordPress works and built his website using a block theme.</p>
-              <p>Another Fiverr client had a simple request involving HTML. Specifically, that client provided me with PDF files with tables that needed to be converted to HTML <code>&lt;table&gt;</code> elements.</p>
-              <p>As I get other clients for any type of website needs, I will add a short summary of the details for each job. Here are summaries for the 4 clients mentioned above.</p>
-            </div>
+          <div class="section-div">
+            <h3>Final thoughts</h3>
+            <p>Using <code>useContext</code> was better than <code>useState</code> but I would like to incorporate
+              <code>useReducer</code> for my state values. I
+              would also prefer to create my own <var>webpack.config</var> file for greater control.
+            </p>
           </div>
+        </div>
+        <figure class="project-figure">
+          <img src="./images/tarp-config.png" alt="Example of tip points for stakes and the ridgeline"
+            class="project-image image-small" />
+          <figcaption>Example of tarp fold(s) and tie points</figcaption>
+        </figure>
+      </div>
+    </section>
 
-          <!-- Client section 1 -->
-          <h3 class="client-heading">#1 Camping Ventures Hub</h3>
-          <div class="client-row row-reverse">
-            <div class="client-col">
-              <a class="client-link link-image" href="https://campingventureshub.com/" target="_blank"><img
-                  src="./images/camphub.jpg" alt="" class="client-img"></a>
-            </div>
-            <div class="client-col">
-              <p>The client's website <a href="https://campingventureshub.com/" target="_blank">Camping Ventures Hub</a> was an affiliate marketing blog. The job had 2 milestones, the first for determining why the domain would not load, and the second for building or "fixing" 5 more pages.</p>
-              <p>The client chose a Block theme named <em>Yith Wonder</em> but he was unfamiliar with WordPress and so knew nothing about the admin area, Gutenberg blocks, or block themes.</p>
-              <p>He also configured the WordPress admin area incorrectly and had his host company create a staging area which was totally unnecessary for a brand new website with no pages.</p>
-            </div>
-            
+    <!-- WordPress Clients -->
+    <section id="clients" class="project-section clients" aria-label="wordpress">
+      <h2>Client Work</h2>
+      <div class="detail-container">
+        <h3 class="tech-stack">Tech used</h3>
+        <div class="tech-images">
+          <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
+          <img height="48"
+            src="https://user-images.githubusercontent.com/25181517/183345419-fe3e8e5a-9bbb-4c34-9121-463721cd9bfe.jpg"
+            alt="WordPress icon" title="Wordpress" />
+          <img src="./icons/elementor-48.png" width="48" alt="Elementor icon" />
+          <img src="./icons/cpanel-svgrepo-com.svg" width="72" alt="cpanel icon">
+          <img src="https://img.icons8.com/color/54/000000/cloudflare.png" alt="Cloudflare icon" title="Cloudflare" />
+        </div>
+        <div class="section-header-row">
+          <img src="./images/computer-550.jpg" alt="computer at desk" class="project-image-primary image-xsmall" />
+          <div class="project-intro-div">
+            <p class="project-intro-p">The details below are not what I would call <em>projects</em>, but are rather the
+              steps I took to help different website owners.</p>
+            <p>I have done unpaid volunteer work for two WordPress site owners. Another client is from Fiverr who was
+              unfamiliar with how WordPress works and built his website using a block theme.</p>
+            <p>Another Fiverr client had a simple request involving HTML. Specifically, that client provided me with PDF
+              files with tables that needed to be converted to HTML <code>&lt;table&gt;</code> elements.</p>
+            <p>As I get other clients for any type of website needs, I will add a short summary of the details for each
+              job. Here are summaries for the 4 clients mentioned above.</p>
           </div>
-          <h4>Issues and the Solutions:</h4>
-          <div class="client-row">
-            <div class="client-col">
+        </div>
 
-              <div class="client-issue">
-                <p>1. <strong>Issue</strong>: The staging area link worked but the domain link was timing out.</li>
-                <p><strong>Solution</strong>: I noticed that the client added the staging area link in the Site Address and WordPress Address URL fields which means his domain had no pages. Bluehost fixed the error.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>2. <strong>Issue</strong>: Home page images were 100's of kilobytes. They were sized to 800px wide but displayed at ~ 300px wide.
-                </p>
-                <p><strong>Solution</strong>: I brought the images into Photoshop, reduced the size, optimized them for the web, and then
-                  uploaded the new lightweight images to the media library.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>3. <strong>Issue</strong>: The footer lacked the elements and styling that the client wanted.</p>
-                <p><strong>Solution</strong>: I edited one of the footer template files and added the current elements including the newsletter form that I created.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>4. <strong>Issue</strong>: The header lacked a proper menu with links to the category pages.</p>
-                <p><strong>Solution</strong>: I created the categories since they did not exist and then added them to the header menu.</p>
-              </div>
-            </div>
-
-            <div class="client-col">
-              <div class="client-issue">
-                <p>5. <strong>Issue</strong>: There were no blog posts to see the styling for the blog page, categories pages, or single post pages.</li>
-                <p><strong>Solution</strong>: I created a single sample post for each category which allowed us to see how the templates displayed on the front-end.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>6. <strong>Issue</strong>: The Home, Archive, and Single templates had limited styling and needed layout changes.</p>
-                <p><strong>Solution</strong>: I edited the templates per the client&apos;s requests for the features and styles he wanted.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>7. <strong>Issue</strong>: No favicon.</li>
-                <p><strong>Solution</strong>: I brought his logo into Inkscape, removed the wordmark, and used just the graphic as the favicon.</p>
-              </div>
-              
-              <div class="client-issue">
-                <p>8. <strong>Issue</strong>: The client&apos;s lack of knowledge of WordPress.</li>
-                <p><strong>Solution</strong>: I created a draft post with notes about the template files, Gutenberg blocks, and theme options so that he would be able to continue building the site on his own.</p>
-              </div>
-            </div>
+        <!-- Client section 1 -->
+        <h3 class="client-heading">#1 Camping Ventures Hub</h3>
+        <div class="client-row row-reverse">
+          <div class="client-col">
+            <a class="client-link link-image" href="https://campingventureshub.com/" target="_blank"><img
+                src="./images/camphub.jpg" alt="" class="client-img"></a>
+          </div>
+          <div class="client-col">
+            <p>The client's website <a href="https://campingventureshub.com/" target="_blank">Camping Ventures Hub</a>
+              was an affiliate marketing blog. The job had 2 milestones, the first for determining why the domain would
+              not load, and the second for building or "fixing" 5 more pages.</p>
+            <p>The client chose a Block theme named <em>Yith Wonder</em> but he was unfamiliar with WordPress and so
+              knew nothing about the admin area, Gutenberg blocks, or block themes.</p>
+            <p>He also configured the WordPress admin area incorrectly and had his host company create a staging area
+              which was totally unnecessary for a brand new website with no pages.</p>
           </div>
 
-          <!-- Client section 2 -->
-          <h3 class="client-heading">#2 propMeUp</h3>
-          <div class="client-row">
-            <div class="client-col">
-              <a class="client-link link-image" href="https://propmeup.net/" target="_blank"><img src="./images/propmeup.jpg" alt=""
-                  class="client-img"></a>
+        </div>
+        <h4>Issues and the Solutions:</h4>
+        <div class="client-row">
+          <div class="client-col">
+
+            <div class="client-issue">
+              <p>1. <strong>Issue</strong>: The staging area link worked but the domain link was timing out.</li>
+              <p><strong>Solution</strong>: I noticed that the client added the staging area link in the Site Address
+                and WordPress Address URL fields which means his domain had no pages. Bluehost fixed the error.</p>
             </div>
-            <div class="client-col">
-              <p>The client's website <a href="https://propmeup.net/" target="_blank">propMeUp</a> is a non-profit charity site that was started by a WordPress designer from Fiverr but who abandoned the project.</p>
-              <p>The owner was on a timeline to obtain funding for the charity and 3 pages needed to be built and the images on the other pages needed to be replaced.</p>
-              <p>The additional issue for the client is that the site was built using the page-builder Elementor and the original designer installed a dozen plugins in support of Elementor.</p>
-              <p>This was a volunteer job for a person in my local area who had no knowledge of WordPress let alone Elementor and a host of plugins.</p>
+
+            <div class="client-issue">
+              <p>2. <strong>Issue</strong>: Home page images were 100's of kilobytes. They were sized to 800px wide but
+                displayed at ~ 300px wide.
+              </p>
+              <p><strong>Solution</strong>: I brought the images into Photoshop, reduced the size, optimized them for
+                the web, and then
+                uploaded the new lightweight images to the media library.</p>
             </div>
-          </div>
-          <h4>Issues and the Solutions:</h4>
-          <div class="client-row">
-            <div class="client-col">
-              
-              <div class="client-issue">
-                <p>1. <strong>Issue</strong>: The Events and Contact pages had not been created and therefore lacked content.</li>
-                <p><strong>Solution</strong>: I created the pages, copied design elements from the Join page, and then made edits. I also created a contact form with custom CSS.</p>
-              </div>
 
-              <div class="client-issue">
-                <p>2. <strong>Issue</strong>: The Home and About pages had spacing, font size, and many other issues.
-                </p>
-                <p><strong>Solution</strong>: I changed the padding, margin, font size, and changed the layout until the client was happy. I then applied those styles to every other section and page throughout the site. The previous designer used pixels for everything &mdash; I replaced <code>px</code> with <code>em</code> and <code>rem</code>.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>3. <strong>Issue</strong>: The sticky header was unreadable due to reduced opacity on scroll.</p>
-                <p><strong>Solution</strong>: I deleted the header and built a simpler header that was not sticky. The site had a back-to-top button so a sticky header was not needed.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>4. <strong>Issue</strong>: The testimonials slider had the text obstructed by the ornamental double-quotes <em>&ldquo;</em> on small screens.</p>
-                <p><strong>Solution</strong>: Elementor had different slider options so I switched to another design that did not have any issues.</p>
-              </div>
+            <div class="client-issue">
+              <p>3. <strong>Issue</strong>: The footer lacked the elements and styling that the client wanted.</p>
+              <p><strong>Solution</strong>: I edited one of the footer template files and added the current elements
+                including the newsletter form that I created.</p>
             </div>
-            <div class="client-col">
 
-              <div class="client-issue">
-                <p>5. <strong>Issue</strong>: The images on the pages needed to either be changed or minimized. The image sizes were in the Megabyte range.</li>
-                <p><strong>Solution</strong>: I downloaded every image and reduced the filesize using Photoshop then uploaded the smaller files and used them on the pages.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>6. <strong>Issue</strong>: There were many plugins that were installed in support of Elementor.</p>
-                <p><strong>Solution</strong>: I migrated the site onto my local machine and then systematically disabled every plugin to see if there was any loss of functionality or styling. I removed all the plugins that were not needed.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>7. <strong>Issue</strong>: No favicon.</li>
-                <p><strong>Solution</strong>: Luckily the client hired a graphic designer who did a great job and had a version of her logo with just the <em>UP</em> and up arrow (see website). I resized that and used it for the favicon.</p>
-              </div>
-
-              <div class="client-issue">
-                <p>8. <strong>Issue</strong>: The client&apos;s lack of knowledge of WordPress and Elementor.</li>
-                <p><strong>Solution</strong>: We did a number of Slack Huddles where I shared my screen and explained how to work with Elementor.</p>
-              </div>
+            <div class="client-issue">
+              <p>4. <strong>Issue</strong>: The header lacked a proper menu with links to the category pages.</p>
+              <p><strong>Solution</strong>: I created the categories since they did not exist and then added them to the
+                header menu.</p>
             </div>
           </div>
 
-          <!-- Client section 3 -->
-          <h3 class="client-heading">#3 Two Average Gamers</h3>
-          <div class="client-row row-reverse">
-            <div class="client-col">
-              <a class="client-link link-image" href="https://twoaveragegamers.com/" target="_blank"><img src="./images/2ag.jpg"
-                  alt="" class="client-img"></a>
+          <div class="client-col">
+            <div class="client-issue">
+              <p>5. <strong>Issue</strong>: There were no blog posts to see the styling for the blog page, categories
+                pages, or single post pages.</li>
+              <p><strong>Solution</strong>: I created a single sample post for each category which allowed us to see how
+                the templates displayed on the front-end.</p>
             </div>
-            <div class="client-col">
-              <p>This was another volunteer opportunity that I found on a job board named Flexjobs for <a href="https://twoaveragegamers.com/" target="_blank">Two Average Gamers</a>. My job was to improve the page speed and to look at the overall design and page structure. I was not able to do much for the design but I did address the other 2 issues.</p>
-              <p>The Google Insights Performance score was in the mid to low 40% range. I was able to get it as high as 73% until it settled at 69-70%. The main drag on the page load speed was Mailchimp (free version) loading the enrtire jQuery librrary.</p>
-              <p>The site also had multiple Contact, About, and other duplicate pages. They site owners were unaware of this. I created the code for 301 redirects and I talked them through how to add it to their cPanel <var>.htaccess</var> file.</p>
+
+            <div class="client-issue">
+              <p>6. <strong>Issue</strong>: The Home, Archive, and Single templates had limited styling and needed
+                layout changes.</p>
+              <p><strong>Solution</strong>: I edited the templates per the client&apos;s requests for the features and
+                styles he wanted.</p>
             </div>
-            
+
+            <div class="client-issue">
+              <p>7. <strong>Issue</strong>: No favicon.</li>
+              <p><strong>Solution</strong>: I brought his logo into Inkscape, removed the wordmark, and used just the
+                graphic as the favicon.</p>
+            </div>
+
+            <div class="client-issue">
+              <p>8. <strong>Issue</strong>: The client&apos;s lack of knowledge of WordPress.</li>
+              <p><strong>Solution</strong>: I created a draft post with notes about the template files, Gutenberg
+                blocks, and theme options so that he would be able to continue building the site on his own.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Client section 2 -->
+        <h3 class="client-heading">#2 propMeUp</h3>
+        <div class="client-row">
+          <div class="client-col">
+            <a class="client-link link-image" href="https://propmeup.net/" target="_blank"><img
+                src="./images/propmeup.jpg" alt="" class="client-img"></a>
+          </div>
+          <div class="client-col">
+            <p>The client's website <a href="https://propmeup.net/" target="_blank">propMeUp</a> is a non-profit charity
+              site that was started by a WordPress designer from Fiverr but who abandoned the project.</p>
+            <p>The owner was on a timeline to obtain funding for the charity and 3 pages needed to be built and the
+              images on the other pages needed to be replaced.</p>
+            <p>The additional issue for the client is that the site was built using the page-builder Elementor and the
+              original designer installed a dozen plugins in support of Elementor.</p>
+            <p>This was a volunteer job for a person in my local area who had no knowledge of WordPress let alone
+              Elementor and a host of plugins.</p>
+          </div>
+        </div>
+        <h4>Issues and the Solutions:</h4>
+        <div class="client-row">
+          <div class="client-col">
+
+            <div class="client-issue">
+              <p>1. <strong>Issue</strong>: The Events and Contact pages had not been created and therefore lacked
+                content.</li>
+              <p><strong>Solution</strong>: I created the pages, copied design elements from the Join page, and then
+                made edits. I also created a contact form with custom CSS.</p>
+            </div>
+
+            <div class="client-issue">
+              <p>2. <strong>Issue</strong>: The Home and About pages had spacing, font size, and many other issues.
+              </p>
+              <p><strong>Solution</strong>: I changed the padding, margin, font size, and changed the layout until the
+                client was happy. I then applied those styles to every other section and page throughout the site. The
+                previous designer used pixels for everything &mdash; I replaced <code>px</code> with <code>em</code> and
+                <code>rem</code>.
+              </p>
+            </div>
+
+            <div class="client-issue">
+              <p>3. <strong>Issue</strong>: The sticky header was unreadable due to reduced opacity on scroll.</p>
+              <p><strong>Solution</strong>: I deleted the header and built a simpler header that was not sticky. The
+                site had a back-to-top button so a sticky header was not needed.</p>
+            </div>
+
+            <div class="client-issue">
+              <p>4. <strong>Issue</strong>: The testimonials slider had the text obstructed by the ornamental
+                double-quotes <em>&ldquo;</em> on small screens.</p>
+              <p><strong>Solution</strong>: Elementor had different slider options so I switched to another design that
+                did not have any issues.</p>
+            </div>
+          </div>
+          <div class="client-col">
+
+            <div class="client-issue">
+              <p>5. <strong>Issue</strong>: The images on the pages needed to either be changed or minimized. The image
+                sizes were in the Megabyte range.</li>
+              <p><strong>Solution</strong>: I downloaded every image and reduced the filesize using Photoshop then
+                uploaded the smaller files and used them on the pages.</p>
+            </div>
+
+            <div class="client-issue">
+              <p>6. <strong>Issue</strong>: There were many plugins that were installed in support of Elementor.</p>
+              <p><strong>Solution</strong>: I migrated the site onto my local machine and then systematically disabled
+                every plugin to see if there was any loss of functionality or styling. I removed all the plugins that
+                were not needed.</p>
+            </div>
+
+            <div class="client-issue">
+              <p>7. <strong>Issue</strong>: No favicon.</li>
+              <p><strong>Solution</strong>: Luckily the client hired a graphic designer who did a great job and had a
+                version of her logo with just the <em>UP</em> and up arrow (see website). I resized that and used it for
+                the favicon.</p>
+            </div>
+
+            <div class="client-issue">
+              <p>8. <strong>Issue</strong>: The client&apos;s lack of knowledge of WordPress and Elementor.</li>
+              <p><strong>Solution</strong>: We did a number of Slack Huddles where I shared my screen and explained how
+                to work with Elementor.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Client section 3 -->
+        <h3 class="client-heading">#3 Two Average Gamers</h3>
+        <div class="client-row row-reverse">
+          <div class="client-col">
+            <a class="client-link link-image" href="https://twoaveragegamers.com/" target="_blank"><img
+                src="./images/2ag.jpg" alt="" class="client-img"></a>
+          </div>
+          <div class="client-col">
+            <p>This was another volunteer opportunity that I found on a job board named Flexjobs for <a
+                href="https://twoaveragegamers.com/" target="_blank">Two Average Gamers</a>. My job was to improve the
+              page speed and to look at the overall design and page structure. I was not able to do much for the design
+              but I did address the other 2 issues.</p>
+            <p>The Google Insights Performance score was in the mid to low 40% range. I was able to get it as high as
+              73% until it settled at 69-70%. The main drag on the page load speed was Mailchimp (free version) loading
+              the enrtire jQuery librrary.</p>
+            <p>The site also had multiple Contact, About, and other duplicate pages. They site owners were unaware of
+              this. I created the code for 301 redirects and I talked them through how to add it to their cPanel
+              <var>.htaccess</var> file.
+            </p>
           </div>
 
-          <!-- Client section 4 -->
-          <h3 class="client-heading">#4 Lift Master</h3>
-          <div class="client-row">
-            <div class="client-col">
-              <a class="client-link link-image" href="https://www.liftmaster.com/" target="_blank"><img src="./images/liftmaster.jpg" alt=""
-                  class="client-img"></a>
-            </div>
-            <div class="client-col">
-              <p>This was another Fiverr gig for someone from <a href="https://www.liftmaster.com/" target="_blank">Lift Master</a>. I had to convert 7 tables in a PDF file to HTML elements.</p>
-              <p>I did create an excellent <a href="https://codepen.io/jim-kernicky/pen/gOjyWeJ" target="_blank">responsive table design</a> but this job only required using a number of <code>rowspan</code> and <code>colspan</code> attributes.</p>
-              <p>I copied the text from the PDF files and pasted it into a markdown file. Then I created the <code>table</code> element with <code>thead</code> and <code>tbody</code> tags, and with no content in the <code>td</code>, <code>tr</code>, and <code>th</code> tags. Then it was just a cut/paste process making sure that <em>my</em> table text matched exactly what was in the PDF files.</p>
-            </div>
-          </div>
+        </div>
 
-          <!-- Client section 5 -->
-          <!-- <h3 class="client-heading">#5 NEXT CLIENT HERE</h3>
+        <!-- Client section 4 -->
+        <h3 class="client-heading">#4 Lift Master</h3>
+        <div class="client-row">
+          <div class="client-col">
+            <a class="client-link link-image" href="https://www.liftmaster.com/" target="_blank"><img
+                src="./images/liftmaster.jpg" alt="" class="client-img"></a>
+          </div>
+          <div class="client-col">
+            <p>This was another Fiverr gig for someone from <a href="https://www.liftmaster.com/" target="_blank">Lift
+                Master</a>. I had to convert 7 tables in a PDF file to HTML elements.</p>
+            <p>I did create an excellent <a href="https://codepen.io/jim-kernicky/pen/gOjyWeJ"
+                target="_blank">responsive table design</a> but this job only required using a number of
+              <code>rowspan</code> and <code>colspan</code> attributes.
+            </p>
+            <p>I copied the text from the PDF files and pasted it into a markdown file. Then I created the
+              <code>table</code> element with <code>thead</code> and <code>tbody</code> tags, and with no content in the
+              <code>td</code>, <code>tr</code>, and <code>th</code> tags. Then it was just a cut/paste process making
+              sure that <em>my</em> table text matched exactly what was in the PDF files.
+            </p>
+          </div>
+        </div>
+
+        <!-- Client section 5 -->
+        <!-- <h3 class="client-heading">#5 NEXT CLIENT HERE</h3>
           <div class="client-row">
             <div class="client-col">
               <a class="client-link" href="#" target="_blank"><img src="./images/placeholder600x400.png" alt=""
@@ -513,50 +625,57 @@
               <p><strong>Solution</strong>: .</p>
             </div>
           </div> -->
-          
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer aria-label="footer">
+    <div class="container">
+      <div class="footer-flex">
+        <div>
+          <a class="footer-logo" href="./index.html">j.k.</a>
         </div>
-      </section>
-      
-    </main>
 
-    <footer aria-label="footer">
-      <div class="container">
-        <div class="footer-flex">
-          <div>
-            <a class="footer-logo" href="./index.html">j.k.</a>
-          </div>
-
-          <nav aria-label="Footer navigation">
-            <ul class="footer-nav">
-              <li class="footer-nav-item current">Details Page</li>
-              <li class="footer-nav-item"><a href="https://github.com/Kernix13/Kernix13/blob/main/resume.pdf"
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav">
+            <li class="footer-nav-item current">Details Page</li>
+            <li class="footer-nav-item"><a href="https://github.com/Kernix13/Kernix13/blob/main/resume.pdf"
                 target="_blank">Online
                 resume</a></li>
-              <li class="footer-nav-item"><a href="https://everyguitarchord.com/contact/" target="_blank">Contact</a></li>
-            </ul>
-          </nav>
-
-          <ul class="social-icons" aria-label="social links">
-            <li class="social-item">
-              <a href="https://www.linkedin.com/in/jim-kernicky/" target="_blank" aria-label="View LinkedIn page" title="My LinkedIn Profile"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li class="social-item">
-              <a href="https://github.com/Kernix13" target="_blank" aria-label="View GitHub page" title="My GitHub Repo"><i aria-hidden="true" class="fab fa-github"></i></a>
-            </li>
-            
-            <li class="social-item">
-              <a href="https://www.freecodecamp.org/fccb4a9d0f6-135f-4a94-97f5-795068269ca7" target="_blank" aria-label="View freeCodeCamp certificates" title="My freeCodeCamp Certificates"><i aria-hidden="true" class="fab fa-free-code-camp"></i></a>
-            </li>
-            <li class="social-item">
-              <a href="https://codepen.io/jim-kernicky" target="_blank" aria-label="View CodePen page" title="My CodePen"><i
-                  aria-hidden="true" class="fab fa-codepen"></i></a>
-            </li>
+            <li class="footer-nav-item"><a href="https://everyguitarchord.com/contact/" target="_blank">Contact</a></li>
           </ul>
-        </div>
-        <p class="copyright" aria-label="copyright">&copy; 2021 James Kernicky</p>
-      </div>
-    </footer>
+        </nav>
 
-    <script src="./script.js"></script>
-  </body>
+        <ul class="social-icons" aria-label="social links">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jim-kernicky/" target="_blank" aria-label="View LinkedIn page"
+              title="My LinkedIn Profile"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Kernix13" target="_blank" aria-label="View GitHub page"
+              title="My GitHub Repo"><i aria-hidden="true" class="fab fa-github"></i></a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.freecodecamp.org/fccb4a9d0f6-135f-4a94-97f5-795068269ca7" target="_blank"
+              aria-label="View freeCodeCamp certificates" title="My freeCodeCamp Certificates"><i aria-hidden="true"
+                class="fab fa-free-code-camp"></i></a>
+          </li>
+          <li class="social-item">
+            <a href="https://codepen.io/jim-kernicky" target="_blank" aria-label="View CodePen page"
+              title="My CodePen"><i aria-hidden="true" class="fab fa-codepen"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright" aria-label="copyright">&copy; 2021 James Kernicky</p>
+    </div>
+
+    <button id="back-to-top-btn"><i class="fa-solid fa-angle-up"></i></button>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

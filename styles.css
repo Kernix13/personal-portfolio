@@ -1021,7 +1021,7 @@ div > .profile-pic {
 }
 
 .testimonial {
-  background: #e6eff6;
+  background: hsl(206, 47%, 95%);
   border-radius: 5px;
   border: 1px solid #c0c7cf;
   flex-basis: 33%;

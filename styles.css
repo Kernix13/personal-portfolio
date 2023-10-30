@@ -21,7 +21,7 @@ font-family: 'Open Sans', sans-serif;
   --gray2: #cccccc;
   --gray3: #aaaaaa;
   --purple: #5805cc;
-  --color-lite: #dae9f4;
+  --color-lite: hsl(205, 54%, 92%);
   --color-dark: #2d3250;
   --link-hover: #8c6a02;
   --footer-hover: rgb(211, 157, 58);

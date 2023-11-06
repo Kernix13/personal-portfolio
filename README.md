@@ -4,7 +4,7 @@
 
 <br>
 
-The files and assets used to build [my portfolio page](https://courageous-cuchufli-816711.netlify.app/) which is deployed on Netlify.
+The files and assets used to build [my portfolio page](https://jameskernicky.netlify.app/) which is deployed on Netlify.
 
 <!-- ## Notes
 

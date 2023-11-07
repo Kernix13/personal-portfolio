@@ -462,16 +462,23 @@ h4.build-desc {
 
 /* ===== Index page ===== */
 .feature-link,
-.feature-link:visited {
+.feature-link:visited,
+.resume-link,
+.resume-link:visited {
   text-decoration: underline;
   text-underline-offset: 0.1875em;
   color: var(--color-dark);
   font-weight: 500;
+  
+  transition: color 300ms ease;
+  
+  border: 1px solid transparent;
+}
+.feature-link,
+.feature-link:visited {
+  padding: 0.25em 0.5em;
   letter-spacing: 0.125em;
   text-transform: uppercase;
-  transition: color 300ms ease;
-  padding: 0.25em 0.5em;
-  border: 1px solid transparent;
 }
 
 .feature-link:hover,
@@ -479,6 +486,16 @@ h4.build-desc {
   color: var(--link-hover);
   outline: none;
   border: 1px solid var(--link-hover);
+}
+.resume-link:hover,
+.resume-link:focus {
+  color: var(--link-hover);
+  outline: none;
+}
+
+.block {
+  display: block;
+  padding-top: 0.5em;
 }
 
 .projects-container {

@@ -269,6 +269,15 @@ footer {
   margin: 0 auto;
 }
 
+// #success-page {
+//   position: relative;
+// }
+
+#success-page footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .footer-logo {
   display: block;
   color: var(--white);
@@ -373,6 +382,12 @@ footer {
 
 .project-section h2 {
   font-size: 2rem;
+}
+.success-section h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.project-section h2, .success-section h2 {
   color: var(--color-dark);
   text-align: center;
   padding: 3em 0;
@@ -447,16 +462,23 @@ h4.build-desc {
 
 /* ===== Index page ===== */
 .feature-link,
-.feature-link:visited {
+.feature-link:visited,
+.resume-link,
+.resume-link:visited {
   text-decoration: underline;
   text-underline-offset: 0.1875em;
   color: var(--color-dark);
   font-weight: 500;
+  
+  transition: color 300ms ease;
+  
+  border: 1px solid transparent;
+}
+.feature-link,
+.feature-link:visited {
+  padding: 0.25em 0.5em;
   letter-spacing: 0.125em;
   text-transform: uppercase;
-  transition: color 300ms ease;
-  padding: 0.25em 0.5em;
-  border: 1px solid transparent;
 }
 
 .feature-link:hover,
@@ -464,6 +486,16 @@ h4.build-desc {
   color: var(--link-hover);
   outline: none;
   border: 1px solid var(--link-hover);
+}
+.resume-link:hover,
+.resume-link:focus {
+  color: var(--link-hover);
+  outline: none;
+}
+
+.block {
+  display: block;
+  padding-top: 0.5em;
 }
 
 .projects-container {
@@ -525,9 +557,15 @@ h4.build-desc {
 
 .intro-title {
   font-size: 3.5rem;
+}
+.success-title {
+  font-size: 2.5rem;
+}
+.intro-title, .success-title {
   font-weight: 400;
   text-align: center;
 }
+
 .intro-title + p {
   text-align: center;
   font-size: 125%;
@@ -763,6 +801,83 @@ div > .profile-pic {
   margin-bottom: 0.75em;
 }
 
+/* Contact Form Styles */
+.portfolio-form {
+  margin: 0 auto;
+  width: 20rem;
+}
+
+.form-group {
+  display: block;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+}
+
+.form-group label {
+  text-align: left;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  color: var(--dark);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 0.75em 1.25em 0.75em 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 200ms linear;
+  width: 320px;
+}
+
+textarea.form-input {
+  height: 6em;
+}
+
+textarea.form-input:focus,
+input[type='text']:focus,
+input[type='email']:focus {
+  box-shadow: 0 4px 8px 0 1px solid rgba(0, 0, 0, 0.9);
+  background-color: var(--color-lite);
+}
+
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.85;
+}
+
+.submit-btn {
+  font-size: 1.125rem;
+  font-family: 'Open Sans', sans-serif;
+  // outline: none;
+  border: none;
+  color: #fff;
+  background-color: var(--color-dark);
+  border-radius: 8px;
+  padding: 0.625rem 1rem;
+  width: 100%;
+}
+
+.submit-btn:focus {
+  outline: 2px solid rgba(211, 157, 58, 0.9);
+  outline-offset: -8px;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(211, 157, 58, 0.6);
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: var(--footer-hover);
+  transition: color 400ms ease, outline 500ms ease, background-color 500ms ease;
+}
+
 /* ===== End Index page ===== */
 
 @media (min-width: 450px) {
@@ -789,6 +904,11 @@ div > .profile-pic {
   .horizontal {
     width: 75%;
     height: auto;
+  }
+
+  .portfolio-form,
+  .form-input {
+    width: 25rem;
   }
 }
 
@@ -1091,7 +1211,6 @@ div > .profile-pic {
   }
 
   .tagline,
-  .contact,
   .skills {
     padding: 7.5em 0;
   }

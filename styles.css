@@ -697,15 +697,7 @@ div > .profile-pic {
   height: 90%;
   width: 100%;
   background-color: var(--white);
-}
-
-.card {
-  justify-content: flex-start;
-}
-
-.card:hover {
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 750ms ease;
 }
 
 .portfolio-thumbnail {

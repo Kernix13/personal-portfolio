@@ -664,14 +664,16 @@ div > .profile-pic {
   border-radius: 0.5em;
   padding: 0.5em 0.25em;
   margin: 0.5em;
-  outline: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0.125em 0.125em 0.75em 0 rgba(26, 3, 3, 0.3);
+  // box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
 }
 
-.skill-container:hover {
-  box-shadow: 0.125em 0.125em 1em 0 rgba(26, 3, 3, 0.35);
-  transition: box-shadow 500ms ease;
-  outline: none;
-}
+// .skill-container:hover {
+//   box-shadow: 0.125em 0.125em 1em 0 rgba(26, 3, 3, 0.35);
+//   transition: box-shadow 500ms ease;
+//   outline: none;
+// }
 
 .skill-icon {
   display: block;

@@ -256,6 +256,10 @@ img {
   color: #fff;
 }
 
+.fa-brands {
+  font-size: 1.125rem;
+}
+
 .fa-angle-up {
   color: #fff;
 }
@@ -954,7 +958,7 @@ input[type='email']::placeholder {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -1040,9 +1044,9 @@ input[type='email']::placeholder {
     margin-left: 3em;
   }
 
-  .footer-nav-item + .footer-nav-item {
-    margin-left: 1.25em;
-  }
+  // .footer-nav-item + .footer-nav-item {
+  //   margin-left: 1.25em;
+  // }
 
   .social-item + .social-item {
     margin-left: 0.875em;

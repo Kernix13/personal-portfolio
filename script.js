@@ -4,6 +4,7 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-link");
 
 hamburger.addEventListener("click", () => {
 
@@ -13,16 +14,16 @@ hamburger.addEventListener("click", () => {
 
   /* Toggle aria-expanded value */
   let menuOpen = navMenu.classList.contains("active");
-  console.log(menuOpen)
-  let newMenuOpenStatus = menuOpen;
-  hamburger.setAttribute("aria-expanded", newMenuOpenStatus);
+  hamburger.setAttribute("aria-expanded", menuOpen);
 })
 
 // close mobile menu
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+navLinks.forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
-//   Need to add Toggle aria-expanded value here as well because it stays as true when you click a menu item
+
+  let menuOpen = navMenu.classList.contains("active");
+  hamburger.setAttribute("aria-expanded", menuOpen);
 }))
 
 /**

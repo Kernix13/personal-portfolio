@@ -43,13 +43,11 @@ function scrollFunction() {
     }
   } else {
     // Hide backToTopButton
-    if (backToTopButton.classList.contains('btnEntrance')) {
-      backToTopButton.classList.remove('btnEntrance');
-      backToTopButton.classList.add('btnExit');
-      setTimeout(function () {
-        backToTopButton.style.display = 'none';
-      }, 125);
-    }
+    // I Removed the other if and setTimeOut
+    // I think this might be bad practice - I did not push so get old code from GitHub or do a git stash
+    backToTopButton.classList.remove('btnEntrance');
+    backToTopButton.classList.add('btnExit');
+    backToTopButton.style.display = 'none';
   }
 }
 
